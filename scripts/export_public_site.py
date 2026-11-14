@@ -42,3 +42,6 @@ for f in out.rglob('*'):
 (out/'snapshot.json').write_text(json.dumps({'exported_at':stamp,'source':'BlenderWorld local review','excluded_submission_archives':len(skipped),'converted_preview_images':len(converted),'live_sync':False},indent=2))
 (out/'_headers').write_text('/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n\n/*.json\n  Cache-Control: public, max-age=60\n')
 print(json.dumps({'files':sum(f.is_file() for f in out.rglob('*')),'bytes':sum(f.stat().st_size for f in out.rglob('*') if f.is_file()),'excluded_archives':len(skipped),'converted':len(converted),'snapshot':stamp}))
+
+from build_home import build
+build(out)

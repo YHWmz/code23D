@@ -36,7 +36,7 @@
     ],
     "expected_runs": 60
   },
-  "scored_runs": 31,
+  "scored_runs": 32,
   "expected_runs": 60,
   "runs": [
     {
@@ -312,8 +312,8 @@
     {
       "task": "bw_0167",
       "role": "astra",
-      "status": "评测中",
-      "score": null
+      "status": "已评分",
+      "score": 64.375
     },
     {
       "task": "bw_0175",
@@ -400,5 +400,5 @@
       "score": null
     }
   ],
-  "updated_at": 1794630226.997414
+  "updated_at": 1794631162.1318455
 }
