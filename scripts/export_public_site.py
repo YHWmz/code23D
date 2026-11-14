@@ -32,6 +32,7 @@ for f in out.rglob('*'):
   text=re.sub(r'<meta http-equiv="refresh"[^>]*>','',text)
   text=text.replace('页面每 60 秒刷新。','当前显示已发布快照。')
   text=text.replace('<main>','<main>'+notice,1) if '<main>' in text else re.sub(r'(<body\b[^>]*>)',lambda m:m.group(1)+notice,text,count=1)
+  if '公开审核快照' not in text and '<h1' in text:text=text.replace('<h1',notice+'<h1',1)
   if f==out/'batch30/index.html':text=text.replace('</body>','<script src="previews.js"></script></body>')
  if f==out/'batch30/previews.js':
   text=text.replace('点击查看原图','点击查看大图（网页压缩版）')
