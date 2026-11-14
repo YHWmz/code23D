@@ -44,3 +44,7 @@ python -m http.server 8080 --directory public
 ```
 
 浏览器打开 `http://localhost:8080/`。
+
+## 来源
+
+任务与参考输入来自 [Qwen/BlenderWorld](https://huggingface.co/datasets/Qwen/BlenderWorld)，官方代码为 [QwenLM/BlenderWorld](https://github.com/QwenLM/BlenderWorld)。保留上游 MIT 许可于 `BLENDERWORLD_LICENSE`。本仓库中的模型对比结果为独立实验记录，并非官方全量榜单。

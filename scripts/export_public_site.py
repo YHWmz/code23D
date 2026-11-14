@@ -31,7 +31,7 @@ for f in out.rglob('*'):
   text=re.sub(r'<a\b[^>]*href=["\'][^"\']*submissions/[^"\']+["\'][^>]*>.*?</a>','<span style="color:#68768a">工程 ZIP：保存在实验服务器</span>',text,flags=re.S)
   text=re.sub(r'<meta http-equiv="refresh"[^>]*>','',text)
   text=text.replace('页面每 60 秒刷新。','当前显示已发布快照。')
-  text=text.replace('<main>','<main>'+notice,1) if '<main>' in text else text.replace('<body>','<body>'+notice,1)
+  text=text.replace('<main>','<main>'+notice,1) if '<main>' in text else re.sub(r'(<body\b[^>]*>)',lambda m:m.group(1)+notice,text,count=1)
   if f==out/'batch30/index.html':text=text.replace('</body>','<script src="previews.js"></script></body>')
  if f==out/'batch30/previews.js':
   text=text.replace('点击查看原图','点击查看大图（网页压缩版）')
