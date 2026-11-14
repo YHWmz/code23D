@@ -1,0 +1,147 @@
+{
+  "rubric_scores": [
+    {
+      "id": "R01",
+      "score": 1,
+      "bpy_check": "pass",
+      "visual_check": "pass",
+      "method": "bpy",
+      "evidence": "The Ahmed mesh is 1.044 x 0.389 x 0.288 m with z-min 0.050 m; its rear slant spans 0.201248 m x 0.094621 m (0.222382 m surface length, 25 degrees), and four render-enabled dark-matte 0.030 x 0.030 x 0.050 m cylindrical supports run from z=0 to 0.050. Ahmed_body_illustrative_flow.png visibly shows the rounded/slanted body and dark matte lower exposed body/support regions."
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "bpy_check": "pass",
+      "visual_check": "pass",
+      "method": "bpy",
+      "evidence": "Render-enabled Wind-tunnel floor | 100 mm grid is a continuous 200 x 200 m plane below the assembly; its procedural grid uses position multiplied by 10 then ping-pong, establishing 0.1 m spacing. Ahmed_body_illustrative_flow.png visibly shows a regular pale grid below the body."
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "bpy_check": "pass",
+      "visual_check": "pass",
+      "method": "visual",
+      "evidence": "The scene contains fifteen render-enabled uniformly named inlet ribbons, a viridis relative-speed material, separated shear-layer meshes, and three clockwise return-flow curves. Ahmed_body_illustrative_flow.png clearly shows the uniform upstream arrows/ribbons, slant-edge separation, and looping cyan recirculation downstream."
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "bpy_check": "pass",
+      "visual_check": "pass",
+      "method": "visual",
+      "evidence": "The render-enabled wake-slice mesh has y bounds [0, 0] and extends from x=0.8428 to 2.07 behind the slant; the body has a spatial coordinate-driven blue-white-red pressure material. Ahmed_body_illustrative_flow.png visibly distinguishes the translucent wake/swirls from the blue-white-red body overlay."
+    },
+    {
+      "id": "R06",
+      "score": 0,
+      "bpy_check": "pass",
+      "visual_check": "fail",
+      "method": "visual",
+      "evidence": "The active camera is the 50.0 mm elevated rear-three-quarter camera with 30.25-degree downward pitch and enabled f/10 DOF. Although Ahmed_body_illustrative_flow.png clearly presents the body, slant, substantial wake, open callout space, and neutral gradient, only two dark support legs are clearly visible; the other two are occluded by the body, so the required all-four-stilts-readable composition is not achieved."
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "bpy_check": "pass",
+      "visual_check": "pass",
+      "method": "bpy",
+      "evidence": "The scene has distinct render-enabled large key, cool fill, and rear rim area lights, plus a packed HDR environment texture connected to a 0.13-strength world background. Ahmed_body_illustrative_flow.png shows soft controlled illumination and restrained studio reflections against a neutral environment."
+    },
+    {
+      "id": "R08",
+      "score": 0,
+      "bpy_check": "fail",
+      "visual_check": "na",
+      "method": "bpy",
+      "evidence": "The editable file loads and is configured for Cycles, 512 samples, 3840x2160, PNG 16-bit, and AgX, but the original saved Cycles device is CPU and its denoiser is OPENIMAGEDENOISE (cycles preferences compute_device_type NONE), not GPU with OptiX denoising. These native settings are not visually measurable."
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "bpy_check": "pass",
+      "visual_check": "pass",
+      "method": "visual",
+      "evidence": "The saved scene output is PNG, 16-bit RGB, 3840x2160. A recursive source-export scan finds exactly one PNG, .eval_workspace/Ahmed_body_illustrative_flow.png; its IHDR confirms PNG 3840x2160, bit depth 16, color type 2, and the image opens successfully."
+    }
+  ],
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 8,
+      "render_conflict": false,
+      "reasons": "Ahmed_body_illustrative_flow.png convincingly delivers the requested paper-style Ahmed-body explanatory scene: body, floor, ribbons, pressure tendency, y=0 wake region, labels, legends, and disclaimer are present in a coherent rear-elevated composition.",
+      "issues": [
+        "The prescribed all-four-stilts-readable composition is not achieved in the final view."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 8,
+      "render_conflict": false,
+      "reasons": "The visible legs meet the gridded floor and body underside plausibly; scene geometry confirms four 50 mm-tall supports between floor and the 50 mm-clearance body.",
+      "issues": [
+        "Two supports are hidden in the designated final view, limiting visual inspection of the complete support interface."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 8,
+      "render_conflict": false,
+      "reasons": "The final image has a recognizable rounded Ahmed-body silhouette, dark exposed lower paint, viridis-like flow graphics, and a clearly separate blue-white-red qualitative pressure treatment.",
+      "issues": [
+        "The broad white/blue pressure overlay substantially dominates the nominal dark-gray body paint on the main visible surfaces."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 7,
+      "render_conflict": false,
+      "reasons": "For an illustrative engineering figure, the final image is clean, denoised, restrained, and professionally typeset, with plausible soft shadows and a coherent stylized flow treatment.",
+      "issues": [
+        "Several bright foreground streamlines cross the body and compete with its silhouette.",
+        "The translucent wake slice and overlaid loops read more as infographic construction than a deeply integrated flow field."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 8,
+      "render_conflict": false,
+      "reasons": "Ahmed_body_illustrative_flow.png places the inlet release upstream, the body centered over its floor, the rear slant downstream, and the wake and recirculation beyond it with generous annotation space.",
+      "issues": [
+        "Support-leg visibility is poor from the selected elevation."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 8,
+      "render_conflict": false,
+      "reasons": "The rendered body-to-floor, stilt-to-body, slant, and wake proportions look sensible; the in-scene 1044 x 389 x 288 mm and 50 mm-clearance labels agree with the modeled scale.",
+      "issues": [
+        "The very small support clearance is difficult to read at the chosen camera distance."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 8,
+      "render_conflict": false,
+      "reasons": "The author final visibly has soft key/fill/rim separation, contact shadows, controlled floor response, and a restrained neutral studio background appropriate to an engineering schematic.",
+      "issues": [
+        "The pressure overlay softens contrast across much of the body, making the matte base finish less legible."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 4,
+      "render_conflict": true,
+      "reasons": "The .blend structurally contains all four supports and the required visualization layers, but the designated author render visibly exposes only two support legs; the internally complete assembly therefore does not visibly achieve the requested complete rear-elevated presentation.",
+      "issues": [
+        "Two of the required four stilts are occluded in the final image.",
+        "The final visual result is weaker than the complete internal support geometry."
+      ]
+    }
+  ],
+  "core_objects_recognizable": true,
+  "catastrophic_failure": false,
+  "overall_notes": "A polished, readable qualitative Ahmed-body flow infographic with correct modeled dimensions, pressure/wake layers, labels, and a compliant 16-bit final PNG. It fails the saved native render requirement because the original scene is CPU/OIDN rather than GPU/OptiX, and the final camera does not clearly show all four required supports."
+}

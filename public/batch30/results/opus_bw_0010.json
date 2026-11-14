@@ -1,0 +1,9 @@
+{
+  "task_id": "bw_0010",
+  "modality": "image",
+  "ok": true,
+  "score": 78.125,
+  "rubric_score": 93.75,
+  "dimension_score": 62.5,
+  "error": ""
+}

@@ -1,0 +1,42 @@
+{
+  "status": "completed",
+  "started_at": 1793248352.870517,
+  "reason": "Complete JSON object followed by Blender stdout trailer caused JSON Extra data; strip only trailer, reuse successful structural judgement and existing fresh views; execute missing official vision stage.",
+  "original_sha256": "9e8102b7976a150a0e0ea1d8e311276e0404cecaabf7a066c2b1d3e6ef8c4e6a",
+  "repaired_sha256": "11619f574d46750bd8873d1a2d544652c9b3576391835fe4d4936701456ea615",
+  "removed_trailer": "\nBlender 4.2.10 LTS (hash 930497d46279 built 2025-05-20 01:33:25)\nRead blend: \"/primus_xpfs_workspace_T04/wangyuhao/blenderworld/experiment/evaluation/opus/bw_0006/tasks/bw_0006/.eval_workspace/final.blend\"\n\nBlender quit\n",
+  "preserved_structural_files": {
+    "submission_manifest.json": "4499f18e4c38885b48d0bf74b3df1f8e910b1fbd7944cfd7801a5f4cf29522e8",
+    "agent_judgement_raw.json": "75150d0afd07a996bca8a150e43b278b5f3eb5cfc1b75bafaf6865474798ba9e",
+    "agent_judge_stdout.jsonl": "297cb95bb6f9b895900a6a67b63aea5338f425dc1dcf22054b171fcfc909c53a",
+    "judgement.json": "a2b453f9d627c1318d636122588d2f4c89fd35b567328c83227d71b3ba9c499d",
+    "agent_bpy_probe.py": "2b1b1979be3561329d9ad2977fe20cbcaa10df18a026c8cc6caa9ebc91053a4a"
+  },
+  "views": {
+    "ok": true,
+    "view_count": 8,
+    "engine": "CYCLES",
+    "device": "CPU",
+    "image_files": [
+      "view_01.png",
+      "view_02.png",
+      "view_03.png",
+      "view_04.png",
+      "view_05.png",
+      "view_06.png",
+      "view_07.png",
+      "view_08.png"
+    ],
+    "notes": "Rendered eight newly generated 1024x1024 Cycles/64-sample CPU views from final.blend. The set includes the submitted perspective camera, two complementary full-booth perspectives, red pillar and self-lit CSA screen detail, integrated hatch/lunar rover detail, hull rivet/seam/stiffener detail, a right-oblique ceiling-and-flow view, and a close hatch-through view emphasizing lunar terrain and rover. Each PNG was opened and inspected after rendering; no corrective rerenders were required."
+  },
+  "finished_at": 1793248437.2213757,
+  "result": {
+    "task_id": "bw_0006",
+    "modality": "image",
+    "ok": true,
+    "score": 87.5,
+    "rubric_score": 100.0,
+    "dimension_score": 75.0,
+    "error": ""
+  }
+}

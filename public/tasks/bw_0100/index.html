@@ -1,0 +1,42 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>bw_0100 · Ahmed 车身流场示意图 · 原始输入</title><style>body{margin:0;background:#f3f6fa;color:#1e293b;font:16px/1.7 system-ui,sans-serif}main{max-width:1060px;margin:auto;padding:28px 20px}a{color:#185adb;overflow-wrap:anywhere}section{background:white;border:1px solid #dde4ef;border-radius:14px;padding:24px;margin:20px 0}h1{line-height:1.3}h2{font-size:22px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.8 ui-monospace,monospace}img,video{display:block;max-width:100%;max-height:720px;margin:14px auto}table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:10px;border-bottom:1px solid #ddd;overflow-wrap:anywhere}.scroll{overflow-x:auto}.muted{color:#64748b}nav{display:flex;gap:16px;flex-wrap:wrap}summary{cursor:pointer}@media(max-width:600px){section{padding:16px}main{padding:16px 10px}}</style></head><body><main><aside style="padding:14px;background:#fff4d6;border:1px solid #e8cd86;margin:16px 0">公开审核快照 · 更新时间 2026-11-14T04:24:10+00:00。测试仍在进行时，状态以此快照为准；公网内容需再次同步仓库才会更新。大图为网页压缩版，原始参考输入保留。完整工程 ZIP 保存在实验服务器，未包含在本站。</aside><a href="../../index.html#task-inputs">← 返回审核主页</a><h1>bw_0100 · Ahmed 车身流场示意图</h1><p>模型实际输入详情 · 两个模型的 inputs 文件逐字节一致，已核验。</p><nav><a href="../bw_0003/index.html">bw_0003</a><a href="../bw_0006/index.html">bw_0006</a><a href="../bw_0100/index.html" aria-current="page">bw_0100</a><a href="../bw_0111/index.html">bw_0111</a><a href="../bw_0214/index.html">bw_0214</a></nav><section><h2>原始题目全文</h2><p class="muted">以下逐字展示 query.txt，保留原文语言；这是任务要求，并非生成结果或评分标准。</p><pre id="original-query"> We need a qualitative CFD-style explanatory render of flow around a standard Ahmed body for an aerodynamics paper. This is an illustrative schematic, not solver-derived or experimentally validated CFD data; add the caption “Illustrative flow visualization — not simulation data.” Model the Ahmed body and wind-tunnel floor according to the attached scene_spec.md. Use a three-quarter rear elevated view that clearly shows the body, its stilts, the rear slant, and the wake. Include upstream flow ribbons, a qualitative y=0 wake slice, and a qualitative surface-pressure tendency map. Show separation and recirculation behind the rear slant, but do not invent numerical velocity, Cp, pressure, or turbulence values. Use the attachment for materials, camera, lighting, and render settings. Label U∞ = 40 m/s and Re ≈ 2.8×10⁶ only as nominal reference conditions, not computed field values. Keep the figure clean, readable, and suitable for later callouts. Deliver one 16-bit PNG and retain the .blend file.</pre><a href="inputs/query.txt" download>下载 query.txt</a></section><section><h2>原始参考素材</h2><p>本题没有参考图片或视频。</p></section><section><h2>任务附件</h2><h3>attachments/scene_spec.md</h3><p><a href="inputs/attachments/scene_spec.md" download>下载原始附件</a></p><pre># Ahmed body CFD 可视化 — 场景规格
+
+## 几何细节
+- 前缘四条棱：R100 mm 圆角过渡
+- 尾部：25° 倾斜面，沿斜面长约 222 mm
+- 底部离地间隙：50 mm
+- 支脚：四根圆柱，直径 30 mm，立于风洞地板
+
+## 材质
+| 对象 | 材质 |
+|---|---|
+| Ahmed body 本体及四支脚 | 深灰哑光漆 |
+| 风洞地板 | 浅色测量网格，间距 100 mm |
+
+## 示意流场与色标
+- 流线/流带：从上游进气面均匀释放，用 viridis 风格表现相对速度；仅标注 low / high，不显示数值量程。
+- 速度切片：位于对称面 y=0，定性表现尾部斜面后的分离与回流区。
+- 车身表面：使用蓝-白-红表现定性的表面压力趋势，不显示数值 Cp。
+- 图例：标注 “schematic / illustrative”，不使用数值刻度。
+
+## 相机
+- 车尾 3/4 俯视机位，约 50 mm 等效焦距，轻微景深
+
+## 灯光
+- 三点柔光：主光 + 辅光 + 轮廓光
+- 低强度 HDRI 提供反射细节
+
+## 渲染
+- Cycles，GPU，512 采样，OptiX 降噪
+- 3840×2160，色彩管理 AgX，中性渐变背景
+- 输出：16-bit PNG 一张，并保存 .blend 工程
+</pre></section><section><h2>本次运行附加的执行指令</h2><p class="muted">这是自建 harness 传给两模型的共同执行指令，不属于原始题目。CPU 设置与个别原题 GPU 要求之间的差异，详见主页说明。</p><pre>Complete the Blender creation task in /workspace/inputs/query.txt using all declared references and attachments in /workspace/inputs/input.json. Read the reference images with Read; for video, extract and inspect frames with ffmpeg and Read. Blender 4.2.10 is available as `blender` or /runtime/blender/blender. Python with Pillow/NumPy is available as `python`. You can write and run bpy scripts with background Blender. This machine uses CPU Cycles; use 8 threads, and inspect your renders before finishing. You have an 8-hour time budget. Fulfil the original requested deliverables, including animations and resolutions where specified. Save the editable primary project to /workspace/exports/final.blend, with requested images/videos and all texture dependencies inside /workspace/exports using relative paths or packed assets. Put temporary scripts and previews under /workspace/work. Do not finish while required rendering jobs are still running. Use only the provided task inputs, your tools, and your own creation work; evaluation is separate.
+</pre></section><section><h2>完整输入文件</h2><p><a href="inputs.zip" download>下载本题完整输入 ZIP</a></p><div class="scroll"><table><thead><tr><th>文件（点击下载）</th><th>大小</th></tr></thead><tbody><tr><td><a href="inputs/attachments/scene_spec.md" download>attachments/scene_spec.md</a></td><td>1,143 B</td></tr><tr><td><a href="inputs/input.json" download>input.json</a></td><td>166 B</td></tr><tr><td><a href="inputs/instruction.html" download>instruction.html</a></td><td>4,822 B</td></tr><tr><td><a href="inputs/query.txt" download>query.txt</a></td><td>1,018 B</td></tr><tr><td><a href="inputs/reference_images.base64.json" download>reference_images.base64.json</a></td><td>99 B</td></tr></tbody></table></div><details><summary>查看 input.json 文件清单</summary><pre>{
+  &quot;task_id&quot;: &quot;bw_0100&quot;,
+  &quot;query_file&quot;: &quot;query.txt&quot;,
+  &quot;files&quot;: [
+    &quot;attachments/scene_spec.md&quot;,
+    &quot;instruction.html&quot;,
+    &quot;reference_images.base64.json&quot;
+  ]
+}
+</pre></details><p class="muted">instruction.html 和 reference_images.base64.json 为输入目录内的原始文件，已保留供下载。本页不包含评测 rubric 或模型产物。</p></section></main></body></html>

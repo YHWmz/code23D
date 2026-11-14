@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    "bw_0003",
+    "bw_0006",
+    "bw_0100",
+    "bw_0111",
+    "bw_0214"
+  ],
+  "models": {
+    "opus": "claude-opus-5-5",
+    "astra": "gpt-6-astra"
+  },
+  "judge": "gpt-5.6-terra",
+  "harness": "Claude Code 2.1.311 for both generation models; official evaluator remains 2.1.220",
+  "render_device": "CPU",
+  "threads_per_job": 8,
+  "generation_timeout_seconds": 28800,
+  "max_turns": 500,
+  "generation_prompt": "Complete the Blender creation task in /workspace/inputs/query.txt using all declared references and attachments in /workspace/inputs/input.json. Read the reference images with Read; for video, extract and inspect frames with ffmpeg and Read. Blender 4.2.10 is available as `blender` or /runtime/blender/blender. Python with Pillow/NumPy is available as `python`. You can write and run bpy scripts with background Blender. This machine uses CPU Cycles; use 8 threads, and inspect your renders before finishing. You have an 8-hour time budget. Fulfil the original requested deliverables, including animations and resolutions where specified. Save the editable primary project to /workspace/exports/final.blend, with requested images/videos and all texture dependencies inside /workspace/exports using relative paths or packed assets. Put temporary scripts and previews under /workspace/work. Do not finish while required rendering jobs are still running. Use only the provided task inputs, your tools, and your own creation work; evaluation is separate.\n",
+  "selection": "Fixed before generation; 2 text, 2 image, 1 video; coverage pilot, not full-benchmark estimate",
+  "dataset_revision": "e67837a78e2d963447bc1b147db42f46bc6ef07f",
+  "protocol": "official unmodified BlenderWorld 0.3.0",
+  "reasoning": "high; Opus native Messages, GPT Responses with replayable output/reasoning translated to Messages tools/images"
+}

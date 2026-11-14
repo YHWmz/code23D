@@ -1,0 +1,150 @@
+{
+  "rubric_scores": [
+    {
+      "id": "R01",
+      "score": 1,
+      "bpy_check": "pass",
+      "visual_check": "pass",
+      "method": "bpy",
+      "evidence": "AhmedBody has a 50 mm underside minimum, a 25-degree planar slant (normal x/z = 0.423/0.906) spanning about 220 mm, 100 mm leading-edge inset radii, and four 30 mm-diameter Stilt_1--4 meshes from the floor to the body; the author PNG visibly shows the rounded/slanted assembly and its dark supports beneath the pressure-overlay body."
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "bpy_check": "pass",
+      "visual_check": "pass",
+      "method": "bpy",
+      "evidence": "WindTunnelFloor is a render-enabled 14 m by 9 m plane under the supports; its Grid100mm material contains 0.100 m divide/repeat parameters. The author PNG visibly shows a continuous light regular floor grid beneath the complete assembly."
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "bpy_check": "pass",
+      "visual_check": "pass",
+      "method": "visual",
+      "evidence": "FlowRibbons_Upstream is a render-enabled 10,456-vertex mesh with nine ribbon components, upstream releases around x=2.45, rel_speed 0.143--0.999, and a viridis ramp; WakeSlice_y0 and two Recirculation arrow curves are also render-enabled. The author PNG clearly reads as an Ahmed-body flow schematic, with many viridis ribbons, separated rear flow, dark-vortex wake texture, and two looping recirculation arrows."
+    },
+    {
+      "id": "R04",
+      "score": 0,
+      "bpy_check": "pass",
+      "visual_check": "fail",
+      "method": "visual",
+      "evidence": "WakeSlice_y0 is render-enabled at y=0 with a qualitative RGBA wake image, while AhmedBody has a 0--0.9999 pressure_tendency attribute feeding a blue-white-red ramp. In the author PNG the attached body map visibly reads blue-to-white but does not visibly show its red branch on the body; the red appears only in the separate legend, so the required visible blue-white-red surface treatment is not established."
+    },
+    {
+      "id": "R06",
+      "score": 0,
+      "bpy_check": "pass",
+      "visual_check": "fail",
+      "method": "visual",
+      "evidence": "The active Camera_Rear34 is a 50 mm perspective camera at an elevated rear-quarter position with 21.0-degree downward pitch and enabled f/11 DOF; the world supplies the neutral gradient. The author PNG has a readable body/slant/wake composition, but only three stilt cylinders are clearly discernible under the body, with the fourth fully hidden, so it does not clearly show all four prescribed stilts."
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "bpy_check": "pass",
+      "visual_check": "pass",
+      "method": "bpy",
+      "evidence": "The saved project has distinct soft area Key_Light (230 W, 2.4 m), Fill_Light (70 W, 2.5 m), and Rim_Light (240 W, 1.6 m), plus studio_hdri.exr connected to a strength-0.15 world background. The author PNG visibly has soft studio illumination and restrained, nondominant environment reflection."
+    },
+    {
+      "id": "R08",
+      "score": 0,
+      "bpy_check": "fail",
+      "visual_check": "na",
+      "method": "bpy",
+      "evidence": "The editable blend loads and retains its scene, but its original Cycles settings are device=CPU and denoiser=OPENIMAGEDENOISE, not GPU with OptiX denoising. It does correctly retain 512 samples, 3840x2160 at 100%, PNG 16-bit RGB, and AgX; device and denoiser are not visually measurable."
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "bpy_check": "pass",
+      "visual_check": "pass",
+      "method": "visual",
+      "evidence": "The saved scene is configured for a 3840x2160 16-bit PNG output, and the whole submission tree contains one designated final render, .eval_workspace/ahmed_body_flow_schematic.png. Its original IHDR confirms PNG, 3840x2160, 16-bit RGB, and the file opens successfully."
+    }
+  ],
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 4,
+      "render_conflict": true,
+      "reasons": "The author PNG is a recognizable, high-quality Ahmed-body aerodynamics schematic with grid, ribbons, slice, wake, legend, and required disclaimer. However, the saved scene contains four exact stilts while the final image only clearly resolves three, so the visible result falls short of the specified complete rear-elevated assembly presentation.",
+      "issues": [
+        "Fourth stilt is fully occluded in the final view.",
+        "The body surface map visibly lacks the red side of the stated diverging treatment."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 8,
+      "render_conflict": false,
+      "reasons": "The final image visibly grounds the body over the tunnel floor on dark cylindrical supports. The blend confirms 50 mm clearance, four floor-to-body supports, and no apparent unsupported principal geometry.",
+      "issues": [
+        "The far support is not visually exposed enough to independently assess all four contacts."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 7,
+      "render_conflict": false,
+      "reasons": "The Ahmed silhouette, viridis ribbons, and technical annotations are readily recognizable, with a clear separation between flow colors and the body tendency treatment. The qualitative body coloring is purposeful and the legend is legible.",
+      "issues": [
+        "Most visible body area is light blue/white pressure overlay rather than visibly dark-gray matte paint.",
+        "No red surface-pressure region is apparent on the body itself."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 7,
+      "render_conflict": false,
+      "reasons": "The supplied final has clean Cycles-like soft lighting, continuous shadows, readable grid perspective, and polished typographic overlay appropriate to an explanatory engineering figure.",
+      "issues": [
+        "The very dense translucent ribbon bundle partly obscures the rear slant and support region.",
+        "The pressure treatment makes the body read somewhat pale and graphic rather than matte-painted."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 7,
+      "render_conflict": false,
+      "reasons": "The body is placed above the gridded floor with the wake immediately behind the slant, upstream ribbons spanning the frame, and a clear lower-right legend. The elevated rear-quarter direction and wake extent are readable.",
+      "issues": [
+        "Layer density around the rear corner reduces separation between wake, slant, and supports.",
+        "The lower-right panel consumes some otherwise available callout space."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 8,
+      "render_conflict": false,
+      "reasons": "The image shows plausible Ahmed-body, stilt, wake, and 100 mm floor-grid relationships. The blend corroborates a 1.044 m body and 30 mm supports at 50 mm clearance.",
+      "issues": [
+        "Support diameter and clearance are small enough in the chosen final view to be hard to inspect visually."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 7,
+      "render_conflict": false,
+      "reasons": "The author image visibly uses a controlled three-point studio treatment: soft highlights, soft floor shadows, and modest HDRI reflection without environmental distraction. Materials remain sufficiently distinct for a technical schematic.",
+      "issues": [
+        "The visible body does not strongly communicate the requested dark-gray matte paint because the pressure overlay dominates it."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 4,
+      "render_conflict": true,
+      "reasons": "Internally the scene contains the requested body, four stilts, floor, wake slice, ribbons, arrows, annotations, and legend, and the final image presents nearly all of those systems. The final view nevertheless fails to visibly resolve the fourth stilt despite it existing in the blend, so visual completeness is lower than the internal scene completeness.",
+      "issues": [
+        "Only three of four support stilts are clearly visible in the designated final image.",
+        "The visible body pressure map does not show the red portion required by its stated blue-white-red treatment."
+      ]
+    }
+  ],
+  "core_objects_recognizable": true,
+  "catastrophic_failure": false,
+  "overall_notes": "A polished and broadly successful qualitative Ahmed-body flow schematic with strong grid, wake, ribbon, annotation, and lighting work. It misses strict requirements because the final view hides one of the four stilts, the body does not visibly exhibit the red branch of its pressure-tendency map, and the original blend is configured for CPU/OpenImageDenoise rather than required GPU/OptiX Cycles rendering."
+}

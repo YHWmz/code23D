@@ -1,0 +1,404 @@
+{
+  "state": {
+    "status": "running",
+    "started_at": 1794562929.809992,
+    "tasks": [
+      "bw_0005",
+      "bw_0010",
+      "bw_0015",
+      "bw_0016",
+      "bw_0031",
+      "bw_0037",
+      "bw_0045",
+      "bw_0069",
+      "bw_0075",
+      "bw_0079",
+      "bw_0080",
+      "bw_0081",
+      "bw_0088",
+      "bw_0102",
+      "bw_0103",
+      "bw_0107",
+      "bw_0109",
+      "bw_0114",
+      "bw_0118",
+      "bw_0124",
+      "bw_0148",
+      "bw_0160",
+      "bw_0167",
+      "bw_0175",
+      "bw_0180",
+      "bw_0192",
+      "bw_0205",
+      "bw_0208",
+      "bw_0210",
+      "bw_0223"
+    ],
+    "expected_runs": 60
+  },
+  "scored_runs": 31,
+  "expected_runs": 60,
+  "runs": [
+    {
+      "task": "bw_0005",
+      "role": "opus",
+      "status": "已评分",
+      "score": 84.375
+    },
+    {
+      "task": "bw_0005",
+      "role": "astra",
+      "status": "已评分",
+      "score": 81.94444444444444
+    },
+    {
+      "task": "bw_0010",
+      "role": "opus",
+      "status": "已评分",
+      "score": 78.125
+    },
+    {
+      "task": "bw_0010",
+      "role": "astra",
+      "status": "已评分",
+      "score": 71.5625
+    },
+    {
+      "task": "bw_0015",
+      "role": "opus",
+      "status": "已评分",
+      "score": 76.00543478260869
+    },
+    {
+      "task": "bw_0015",
+      "role": "astra",
+      "status": "已评分",
+      "score": 90.625
+    },
+    {
+      "task": "bw_0016",
+      "role": "opus",
+      "status": "评测失败",
+      "score": null
+    },
+    {
+      "task": "bw_0016",
+      "role": "astra",
+      "status": "评测失败",
+      "score": null
+    },
+    {
+      "task": "bw_0031",
+      "role": "opus",
+      "status": "已评分",
+      "score": 90.625
+    },
+    {
+      "task": "bw_0031",
+      "role": "astra",
+      "status": "评测失败",
+      "score": null
+    },
+    {
+      "task": "bw_0037",
+      "role": "opus",
+      "status": "已评分",
+      "score": 82.1590909090909
+    },
+    {
+      "task": "bw_0037",
+      "role": "astra",
+      "status": "已评分",
+      "score": 84.20454545454545
+    },
+    {
+      "task": "bw_0045",
+      "role": "opus",
+      "status": "评测失败",
+      "score": null
+    },
+    {
+      "task": "bw_0045",
+      "role": "astra",
+      "status": "已评分",
+      "score": 76.73076923076923
+    },
+    {
+      "task": "bw_0069",
+      "role": "opus",
+      "status": "已评分",
+      "score": 72.56944444444444
+    },
+    {
+      "task": "bw_0069",
+      "role": "astra",
+      "status": "已评分",
+      "score": 83.125
+    },
+    {
+      "task": "bw_0075",
+      "role": "opus",
+      "status": "已评分",
+      "score": 77.5
+    },
+    {
+      "task": "bw_0075",
+      "role": "astra",
+      "status": "已评分",
+      "score": 89.375
+    },
+    {
+      "task": "bw_0079",
+      "role": "opus",
+      "status": "已评分",
+      "score": 80.45454545454545
+    },
+    {
+      "task": "bw_0079",
+      "role": "astra",
+      "status": "已评分",
+      "score": 70.9090909090909
+    },
+    {
+      "task": "bw_0080",
+      "role": "opus",
+      "status": "已评分",
+      "score": 83.4375
+    },
+    {
+      "task": "bw_0080",
+      "role": "astra",
+      "status": "已评分",
+      "score": 89.375
+    },
+    {
+      "task": "bw_0081",
+      "role": "opus",
+      "status": "已评分",
+      "score": 82.125
+    },
+    {
+      "task": "bw_0081",
+      "role": "astra",
+      "status": "已评分",
+      "score": 89.375
+    },
+    {
+      "task": "bw_0088",
+      "role": "opus",
+      "status": "已评分",
+      "score": 78.75
+    },
+    {
+      "task": "bw_0088",
+      "role": "astra",
+      "status": "已评分",
+      "score": 80.625
+    },
+    {
+      "task": "bw_0102",
+      "role": "opus",
+      "status": "生成失败",
+      "score": null
+    },
+    {
+      "task": "bw_0102",
+      "role": "astra",
+      "status": "已评分",
+      "score": 86.875
+    },
+    {
+      "task": "bw_0103",
+      "role": "opus",
+      "status": "已评分",
+      "score": 80.0
+    },
+    {
+      "task": "bw_0103",
+      "role": "astra",
+      "status": "评测失败",
+      "score": null
+    },
+    {
+      "task": "bw_0107",
+      "role": "opus",
+      "status": "已评分",
+      "score": 87.5
+    },
+    {
+      "task": "bw_0107",
+      "role": "astra",
+      "status": "已评分",
+      "score": 77.21153846153845
+    },
+    {
+      "task": "bw_0109",
+      "role": "opus",
+      "status": "已评分",
+      "score": 57.564655172413794
+    },
+    {
+      "task": "bw_0109",
+      "role": "astra",
+      "status": "已评分",
+      "score": 75.58189655172413
+    },
+    {
+      "task": "bw_0114",
+      "role": "opus",
+      "status": "生成中",
+      "score": null
+    },
+    {
+      "task": "bw_0114",
+      "role": "astra",
+      "status": "已评分",
+      "score": 93.75
+    },
+    {
+      "task": "bw_0118",
+      "role": "opus",
+      "status": "评测中",
+      "score": null
+    },
+    {
+      "task": "bw_0118",
+      "role": "astra",
+      "status": "已评分",
+      "score": 85.45454545454545
+    },
+    {
+      "task": "bw_0124",
+      "role": "opus",
+      "status": "生成中",
+      "score": null
+    },
+    {
+      "task": "bw_0124",
+      "role": "astra",
+      "status": "生成中",
+      "score": null
+    },
+    {
+      "task": "bw_0148",
+      "role": "opus",
+      "status": "排队中",
+      "score": null
+    },
+    {
+      "task": "bw_0148",
+      "role": "astra",
+      "status": "已评分",
+      "score": 94.375
+    },
+    {
+      "task": "bw_0160",
+      "role": "opus",
+      "status": "排队中",
+      "score": null
+    },
+    {
+      "task": "bw_0160",
+      "role": "astra",
+      "status": "生成失败",
+      "score": null
+    },
+    {
+      "task": "bw_0167",
+      "role": "opus",
+      "status": "排队中",
+      "score": null
+    },
+    {
+      "task": "bw_0167",
+      "role": "astra",
+      "status": "评测中",
+      "score": null
+    },
+    {
+      "task": "bw_0175",
+      "role": "opus",
+      "status": "排队中",
+      "score": null
+    },
+    {
+      "task": "bw_0175",
+      "role": "astra",
+      "status": "生成中",
+      "score": null
+    },
+    {
+      "task": "bw_0180",
+      "role": "opus",
+      "status": "排队中",
+      "score": null
+    },
+    {
+      "task": "bw_0180",
+      "role": "astra",
+      "status": "排队中",
+      "score": null
+    },
+    {
+      "task": "bw_0192",
+      "role": "opus",
+      "status": "排队中",
+      "score": null
+    },
+    {
+      "task": "bw_0192",
+      "role": "astra",
+      "status": "排队中",
+      "score": null
+    },
+    {
+      "task": "bw_0205",
+      "role": "opus",
+      "status": "排队中",
+      "score": null
+    },
+    {
+      "task": "bw_0205",
+      "role": "astra",
+      "status": "排队中",
+      "score": null
+    },
+    {
+      "task": "bw_0208",
+      "role": "opus",
+      "status": "排队中",
+      "score": null
+    },
+    {
+      "task": "bw_0208",
+      "role": "astra",
+      "status": "排队中",
+      "score": null
+    },
+    {
+      "task": "bw_0210",
+      "role": "opus",
+      "status": "排队中",
+      "score": null
+    },
+    {
+      "task": "bw_0210",
+      "role": "astra",
+      "status": "排队中",
+      "score": null
+    },
+    {
+      "task": "bw_0223",
+      "role": "opus",
+      "status": "排队中",
+      "score": null
+    },
+    {
+      "task": "bw_0223",
+      "role": "astra",
+      "status": "排队中",
+      "score": null
+    }
+  ],
+  "updated_at": 1794630226.997414
+}

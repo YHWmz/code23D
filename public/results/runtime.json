@@ -1,0 +1,38 @@
+{
+  "requirements": {
+    "versions": {
+      "blender": "4.2.10",
+      "node": "22.17.0",
+      "claude_code": "2.1.220",
+      "codex": "0.147.0"
+    },
+    "evaluation_tools": [
+      "blender",
+      "node",
+      "claude_code"
+    ],
+    "generation_tools": [
+      "blender",
+      "node",
+      "codex",
+      "claude_code"
+    ]
+  },
+  "blender": {
+    "path": "/primus_xpfs_workspace_T04/wangyuhao/blenderworld/experiment/runtime/blender/blender",
+    "version": "4.2.10",
+    "sha256": "0a90dcaeaed715a713fed66c0d085136b138da8e568cb33cb853630b0c894cbc",
+    "build_hash": "930497d46279",
+    "gpu_backends": []
+  },
+  "node": {
+    "path": "/primus_xpfs_workspace_T04/wangyuhao/blenderworld/experiment/runtime/npm/node_modules/node/bin/node",
+    "version": "22.17.0",
+    "sha256": "8071ae0fca095a272ad698a90c7061801a86fb6392ddb81e922b68a91a4374b9"
+  },
+  "claude_code": {
+    "path": "/primus_xpfs_workspace_T04/wangyuhao/blenderworld/experiment/runtime/npm/node_modules/@anthropic-ai/claude-code/bin/claude.exe",
+    "version": "2.1.220",
+    "sha256": "674f61f20ff306f3100cf9200e4c36c4b70278b5bef2884549819b942a89c863"
+  }
+}

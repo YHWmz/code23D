@@ -1,0 +1,9 @@
+{
+  "task_id": "bw_0167",
+  "query_file": "query.txt",
+  "files": [
+    "attachments/shot_list.json",
+    "instruction.html",
+    "reference_images.base64.json"
+  ]
+}

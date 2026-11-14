@@ -1,0 +1,9 @@
+{
+  "task_id": "bw_0100",
+  "query_file": "query.txt",
+  "files": [
+    "attachments/scene_spec.md",
+    "instruction.html",
+    "reference_images.base64.json"
+  ]
+}

@@ -1,0 +1,551 @@
+{
+  "ok": true,
+  "complete": true,
+  "expected_runs": 10,
+  "audited_runs": 10,
+  "successful_runs": 10,
+  "global_errors": [],
+  "runs": [
+    {
+      "role": "opus",
+      "task_id": "bw_0003",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 2,
+        "bytes": 36376364,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0003",
+        "modality": "image",
+        "ok": true,
+        "score": 89.375,
+        "rubric_score": 100.0,
+        "dimension_score": 78.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All views were newly rendered at 1024x1024 with Cycles and 64 samples; no supported OPTIX/CUDA device was available, so CPU was used. View 01 preserves the submitted MacroCamera framing. Views 02-04 provide complementary front, oblique, and elevated bilayer overviews. Views 05 and 06 are close details of the embedded glass-like helical protein and attached glycoprotein clusters. View 07 focuses the diagonal DNA/background relationship, with one camera-framing correction after inspection. View 08 details the separate granular golden nanoparticle alongside DNA and translucent small-molecule clusters. Authored geometry, materials, lights, visibility, denoising, and color management were retained without scene edits."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 78.75,
+        "score": 89.375
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0006",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 4,
+        "bytes": 43080832,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0006",
+        "modality": "image",
+        "ok": true,
+        "score": 87.5,
+        "rubric_score": 100.0,
+        "dimension_score": 75.0,
+        "error": ""
+      },
+      "recovery": "Complete JSON object followed by Blender stdout trailer caused JSON Extra data; strip only trailer, reuse successful structural judgement and existing fresh views; execute missing official vision stage.",
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered eight newly generated 1024x1024 Cycles/64-sample CPU views from final.blend. The set includes the submitted perspective camera, two complementary full-booth perspectives, red pillar and self-lit CSA screen detail, integrated hatch/lunar rover detail, hull rivet/seam/stiffener detail, a right-oblique ceiling-and-flow view, and a close hatch-through view emphasizing lunar terrain and rover. Each PNG was opened and inspected after rendering; no corrective rerenders were required."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 75.0,
+        "score": 87.5
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0100",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 6,
+        "bytes": 34275358,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0100",
+        "modality": "text",
+        "ok": true,
+        "score": 70.75,
+        "rubric_score": 64.0,
+        "dimension_score": 77.5,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered from the submitted Camera_Rear34 first, then complementary opposite-rear, lateral, plan, low support, wake/recirculation, symmetry-axis, and elevated overview cameras. Views 05 and 06 are detail-oriented. Each PNG was opened and inspected after rendering; no corrective rerenders were needed. All views use evaluator overrides of Cycles at 1024x1024 with 64 samples, while preserving the submitted lighting, materials, denoising, compositor annotations, and color management. Only a CPU Cycles device was available."
+      },
+      "independent_score": {
+        "rubric_score": 64.0,
+        "dimension_score": 77.5,
+        "score": 70.75
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0111",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 38819999,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0111",
+        "modality": "text",
+        "ok": true,
+        "score": 90.0,
+        "rubric_score": 100.0,
+        "dimension_score": 80.0,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight views were newly rendered from .eval_workspace/final.blend in Cycles at 1024x1024 with 64 samples; only CPU was available. The submitted 85 mm product camera was retained for view_01. Complementary coverage includes clean front three-quarter and elevated hero views (02, 04), an opposite-side view showing bottle form and oak grain (03), a cap/neck and glass-thickness detail (05), a label halftone/matte-paper detail (06), a highball detail showing pale-amber drink, bubbles, ice cracks, and secured lime garnish (07), and an elevated closure/ice detail showing crown-cap seating and teeth (08). Every PNG was opened and inspected after rendering; no corrective rerenders were necessary."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 80.0,
+        "score": 90.0
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0214",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 2,
+        "bytes": 36031397,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0214",
+        "modality": "video",
+        "ok": true,
+        "score": 73.18877551020408,
+        "rubric_score": 93.87755102040816,
+        "dimension_score": 52.5,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered at 1024x1024 with 64 CYCLES samples and the submission's existing denoising/color settings preserved. CPU was used because the render host exposed no OPTIX or CUDA device. Views include the submitted close camera (view_01), a wide straight-on habitat view, opposing wide oblique views at different animation moments, close goldfish material/tail details, and dedicated driftwood-bubble and planted-right-side details. All eight images were inspected after rendering; no corrective rerenders were required."
+      },
+      "independent_score": {
+        "rubric_score": 93.87755102040816,
+        "dimension_score": 52.5,
+        "score": 73.18877551020408
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0003",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 29601058,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0003",
+        "modality": "image",
+        "ok": true,
+        "score": 86.25,
+        "rubric_score": 100.0,
+        "dimension_score": 72.5,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered from final.blend with Cycles CPU, 1024x1024, 64 samples, retaining scene denoising and color management. Views include the submitted-camera composition (framing corrected after initial square crop), alternate clean wide membrane views, a channel/pore detail, glycoprotein detail, diagonal DNA context detail, and a nanoparticle surface-detail view. Corrective re-renders were limited to view_01 once, view_02 twice, and view_08 once after visual inspection."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 72.5,
+        "score": 86.25
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0006",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 7,
+        "bytes": 38734520,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0006",
+        "modality": "image",
+        "ok": true,
+        "score": 93.125,
+        "rubric_score": 100.0,
+        "dimension_score": 86.25,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All views were freshly rendered from final.blend at 1024x1024 with 64 Cycles samples and the scene's existing denoising/color management retained. CPU was used because Blender reported only an Intel Xeon CPU Cycles device (no OPTIX/CUDA device available). view_01 uses the submitted organizer camera; views_02-04 provide centered and opposing wide perspectives; views_05-06 document the hatch, layered hull, fasteners, lunar terrain, and rover; view_07 documents the suspended canopy, edge lighting, display, and hatch; view_08 details the red branded pillar and illuminated CSA display. Each PNG was opened and inspected after rendering. No corrective rerenders were necessary."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 86.25,
+        "score": 93.125
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0100",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 2,
+        "bytes": 33515057,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0100",
+        "modality": "text",
+        "ok": true,
+        "score": 82.375,
+        "rubric_score": 76.0,
+        "dimension_score": 88.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered the submitted camera first, followed by opposite-rear, upstream, elevated-overview, top-plan, wake-detail, and front-geometry/detail views. Inspected every PNG. Corrected views 03, 04, and 07 once each to remove floor-horizon clipping; all retained authored geometry, materials, visibility, lighting, denoising, and color management. No supported OptiX/CUDA device was available, so Cycles rendered on CPU."
+      },
+      "independent_score": {
+        "rubric_score": 76.0,
+        "dimension_score": 88.75,
+        "score": 82.375
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0111",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 6,
+        "bytes": 39200007,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0111",
+        "modality": "text",
+        "ok": true,
+        "score": 86.875,
+        "rubric_score": 100.0,
+        "dimension_score": 73.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight views were newly rendered from final.blend in Cycles at 1024x1024 with 64 samples, retaining the submitted scene denoising and color management. CPU was the available supported device. View 01 uses the submitted hero camera; views 02-03 are complementary wide three-quarter product views; views 04-05 provide closer bottle/highball coverage; views 06-08 detail the crown cap and pale-cyan glass, wrap label, and highball ice, carbonation, and secured lime garnish. Each PNG was opened and inspected; no framing or clipping corrections were needed."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 73.75,
+        "score": 86.875
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0214",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 61544197,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0214",
+        "modality": "video",
+        "ok": true,
+        "score": 71.77295918367346,
+        "rubric_score": 89.79591836734694,
+        "dimension_score": 53.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight newly rendered 1024x1024 CYCLES views used 64 samples and the submission's retained denoising, scene lighting, materials, visibility, and color management. CPU was used because Cycles reported no supported GPU device. view_01 uses the submitted camera at frame 1. Wide staging and passage views cover frames 23, 38, 52, and 66 (views 02-04 and 08); views 02 and 04 were corrected once to tighten framing and avoid exposing large scene planes. Detail views 05-07 focus respectively on the left longtail's scale/fin construction, the foreground turning-pass overlap with bubbles and plants, and the dense face-on/crossing fish layer. Each rendered PNG was opened and inspected; no further corrections were needed."
+      },
+      "independent_score": {
+        "rubric_score": 89.79591836734694,
+        "dimension_score": 53.75,
+        "score": 71.77295918367346
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    }
+  ]
+}

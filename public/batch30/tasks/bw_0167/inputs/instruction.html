@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BlenderWorld · bw_0167</title><style>
+:root{color-scheme:light;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",sans-serif;color:#153b43;background:#f3f7f5}
+*{box-sizing:border-box}body{margin:0}main{max-width:1150px;margin:32px auto;padding:0 20px 45px}header{margin:0 0 23px}h1{font-size:28px;line-height:1.4;margin:7px 0}h2{font-size:19px;margin:0 0 16px}p{line-height:1.7}.label,.muted{font-size:12px;color:#58777c}.label{letter-spacing:2px}section{background:#fff;border:1px solid #dce8e2;border-radius:13px;padding:24px;margin:18px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.8 inherit;margin:0}figure{margin:0 0 20px}figure img{display:block;width:100%;max-height:780px;object-fit:contain;background:#f5f7f5;border:1px solid #e2eae6;border-radius:9px}figcaption{font-size:12px;color:#58777c;margin-top:8px;overflow-wrap:anywhere}a{color:#086c62;text-underline-offset:3px;overflow-wrap:anywhere}video{max-width:100%;max-height:600px;display:block}details{border-top:1px solid #e2eae6;padding:13px 0}summary{cursor:pointer;font-weight:600}details pre{margin-top:14px;font-size:12px}code{overflow-wrap:anywhere}input,select{font:inherit;padding:10px;border:1px solid #b9cdc4;border-radius:8px;background:#fff;color:inherit}.filters{display:flex;gap:10px;margin:20px 0}input{flex:1;min-width:0}table{width:100%;border-collapse:collapse;text-align:left;background:#fff}th,td{border-bottom:1px solid #e2eae6;padding:13px;font-size:13px}th{color:#58777c;font-size:12px}td:first-child{white-space:nowrap}.table{overflow:auto;border:1px solid #dce8e2;border-radius:10px}.hidden{display:none}@media(max-width:640px){main{margin-top:19px;padding:0 13px 25px}h1{font-size:22px}section{padding:17px}pre{font-size:13px}.filters{flex-wrap:wrap}input{flex-basis:100%}th,td{padding:10px}}
+</style></head><body><main><aside style="padding:14px;background:#fff4d6;border:1px solid #e8cd86;margin:16px 0">公开审核快照 · 更新时间 2026-11-14T04:24:10+00:00。测试仍在进行时，状态以此快照为准；公网内容需再次同步仓库才会更新。大图为网页压缩版，原始参考输入保留。完整工程 ZIP 保存在实验服务器，未包含在本站。</aside><header><div class="label">BLENDERWORLD · EMBEDDED IMAGE VIEW</div><h1>BW_0167</h1><p class="muted">text · 参考图片已以 Base64 内嵌，可离线查看。</p><p class="muted">Rendering &amp; Simulation / Physics Simulation &amp; Visual Effects</p></header><section><h2>Query · 原始任务</h2><pre id="query">Our team&#x27;s putting together a short animated sequence and I&#x27;m the artist on it — I want a key-frame previz render first so the group can lock the camera and framing before we push it further and try other angles. The concept is that CMYK-ball demo where four colored balls roll across a canvas, converge in the middle and leave blended color trails. Hero object is a 2 m × 2 m horizontal canvas plane at the world origin; four solid balls — magenta, cyan, yellow and key black — roll in diagonally from the four quadrants toward the center on rigid-body physics, with the canvas as a passive collider so the trails cross and blend. The canvas runs two dynamic-paint passes at once: one to lay down the trails, one for surface ripples. Subdivision, paintmap resolution, dissolve and wave settings, ball diameter and the exact color values, the canvas material, the three-point studio lighting angles and color temp, the camera lens and all the render settings are in the attached `shot_list.json` — follow that. Final image at 1920 × 1080, grab frame 110 where the convergence is fullest. The main thing is the camera and composition have to read clearly — put the moment the balls meet on a golden-ratio point, and keep the subject and the four trails clean; don&#x27;t let the ripples and highlights mush them together. Keep the mood clean and tactile. Send me the render and keep the Blend file, we&#x27;ll be reshooting angles later.</pre></section><section><h2>题目附件</h2><details><summary>shot_list.json</summary><p><a href="attachments/shot_list.json" download>下载附件</a></p><pre>{
+    &quot;画布&quot;: {
+        &quot;尺寸&quot;: &quot;2 m × 2 m 水平平面，置于世界原点&quot;,
+        &quot;细分&quot;: &quot;约 400 × 400 面&quot;
+    },
+    &quot;动态涂绘表面&quot;: {
+        &quot;Paint_着色面&quot;: {
+            &quot;涂绘贴图&quot;: &quot;2048 × 2048&quot;,
+            &quot;Dissolve&quot;: &quot;开启，消散约 250 帧&quot;,
+            &quot;边缘&quot;: &quot;自然扩散&quot;
+        },
+        &quot;Wave_涟漪面&quot;: {
+            &quot;spring&quot;: 0.35,
+            &quot;damping&quot;: 0.04,
+            &quot;speed&quot;: 0.6,
+            &quot;timescale&quot;: 1.0,
+            &quot;用途&quot;: &quot;驱动表面涟漪置换&quot;
+        }
+    },
+    &quot;球_brush&quot;: {
+        &quot;数量与直径&quot;: &quot;4 个实心球，直径 0.12 m&quot;,
+        &quot;颜色&quot;: {
+            &quot;品红&quot;: &quot;0.86, 0.08, 0.28&quot;,
+            &quot;青&quot;: &quot;0.00, 0.62, 0.78&quot;,
+            &quot;黄&quot;: &quot;0.98, 0.80, 0.10&quot;,
+            &quot;墨黑&quot;: &quot;0.05, 0.05, 0.06&quot;
+        },
+        &quot;起始位置&quot;: &quot;四个象限内侧约 ±0.7 m 处&quot;,
+        &quot;运动&quot;: &quot;以不同初速度斜滚向中心，刚体驱动真实滚动&quot;,
+        &quot;画布碰撞&quot;: &quot;设为 passive collider&quot;
+    },
+    &quot;画布材质&quot;: {
+        &quot;基底&quot;: &quot;微粗糙哑光白，base color 中性浅灰 0.8，roughness 0.6&quot;,
+        &quot;颜色混入&quot;: &quot;Paint 输出混到 base color&quot;,
+        &quot;置换&quot;: &quot;Wave 输出驱动，幅度约 8 mm&quot;
+    },
+    &quot;灯光_三点柔光棚&quot;: {
+        &quot;主光&quot;: &quot;1.2 m 见方 area，右上 35° 入射&quot;,
+        &quot;辅光&quot;: &quot;左侧补光，低主光一档&quot;,
+        &quot;轮廓光&quot;: &quot;顶部弱轮廓光，勾球体与涟漪高光&quot;
+    },
+    &quot;相机&quot;: {
+        &quot;镜头&quot;: &quot;50 mm，f/4&quot;,
+        &quot;高度&quot;: &quot;离地约 0.9 m&quot;,
+        &quot;俯角&quot;: &quot;约 25°&quot;,
+        &quot;构图&quot;: &quot;四球交汇瞬间置于黄金分割点&quot;
+    },
+    &quot;渲染&quot;: {
+        &quot;引擎&quot;: &quot;Cycles + GPU&quot;,
+        &quot;采样&quot;: &quot;512 + OptiX 降噪&quot;,
+        &quot;分辨率&quot;: &quot;1920 × 1080&quot;,
+        &quot;色彩管理&quot;: &quot;AgX&quot;,
+        &quot;输出&quot;: &quot;第 110 帧，16-bit PNG&quot;,
+        &quot;工程&quot;: &quot;保存 .blend&quot;
+    }
+}
+</pre></details></section><p class="muted">查看用页面。Harbor 入口为任务目录中的 instruction.md；评分标准仅保留在 tests/，不进入生成输入。</p></main></body></html>
