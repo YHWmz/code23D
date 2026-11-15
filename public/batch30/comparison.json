@@ -1,7 +1,7 @@
 {
   "state": {
-    "status": "running",
-    "started_at": 1794562929.809992,
+    "status": "retrying_failed_runs",
+    "started_at": 1794765146.6009197,
     "tasks": [
       "bw_0005",
       "bw_0010",
@@ -34,9 +34,10 @@
       "bw_0210",
       "bw_0223"
     ],
-    "expected_runs": 60
+    "expected_runs": 60,
+    "retry_runs": 8
   },
-  "scored_runs": 36,
+  "scored_runs": 52,
   "expected_runs": 60,
   "runs": [
     {
@@ -78,13 +79,13 @@
     {
       "task": "bw_0016",
       "role": "opus",
-      "status": "评测失败",
+      "status": "评测中",
       "score": null
     },
     {
       "task": "bw_0016",
       "role": "astra",
-      "status": "评测失败",
+      "status": "等待评测",
       "score": null
     },
     {
@@ -96,7 +97,7 @@
     {
       "task": "bw_0031",
       "role": "astra",
-      "status": "评测失败",
+      "status": "等待评测",
       "score": null
     },
     {
@@ -114,7 +115,7 @@
     {
       "task": "bw_0045",
       "role": "opus",
-      "status": "评测失败",
+      "status": "评测中",
       "score": null
     },
     {
@@ -198,7 +199,7 @@
     {
       "task": "bw_0102",
       "role": "opus",
-      "status": "生成失败",
+      "status": "排队中",
       "score": null
     },
     {
@@ -216,7 +217,7 @@
     {
       "task": "bw_0103",
       "role": "astra",
-      "status": "评测失败",
+      "status": "等待评测",
       "score": null
     },
     {
@@ -282,8 +283,8 @@
     {
       "task": "bw_0148",
       "role": "opus",
-      "status": "评测中",
-      "score": null
+      "status": "已评分",
+      "score": 93.125
     },
     {
       "task": "bw_0148",
@@ -294,20 +295,20 @@
     {
       "task": "bw_0160",
       "role": "opus",
-      "status": "生成中",
+      "status": "等待评测",
       "score": null
     },
     {
       "task": "bw_0160",
       "role": "astra",
-      "status": "生成失败",
+      "status": "排队中",
       "score": null
     },
     {
       "task": "bw_0167",
       "role": "opus",
-      "status": "生成中",
-      "score": null
+      "status": "已评分",
+      "score": 71.875
     },
     {
       "task": "bw_0167",
@@ -318,87 +319,87 @@
     {
       "task": "bw_0175",
       "role": "opus",
-      "status": "排队中",
-      "score": null
+      "status": "已评分",
+      "score": 69.375
     },
     {
       "task": "bw_0175",
       "role": "astra",
-      "status": "生成中",
-      "score": null
+      "status": "已评分",
+      "score": 81.04166666666666
     },
     {
       "task": "bw_0180",
       "role": "opus",
-      "status": "排队中",
-      "score": null
+      "status": "已评分",
+      "score": 86.875
     },
     {
       "task": "bw_0180",
       "role": "astra",
-      "status": "生成中",
-      "score": null
+      "status": "已评分",
+      "score": 89.375
     },
     {
       "task": "bw_0192",
       "role": "opus",
-      "status": "排队中",
-      "score": null
+      "status": "已评分",
+      "score": 69.75
     },
     {
       "task": "bw_0192",
       "role": "astra",
-      "status": "排队中",
-      "score": null
+      "status": "已评分",
+      "score": 60.625
     },
     {
       "task": "bw_0205",
       "role": "opus",
-      "status": "排队中",
-      "score": null
+      "status": "已评分",
+      "score": 85.0
     },
     {
       "task": "bw_0205",
       "role": "astra",
-      "status": "排队中",
-      "score": null
+      "status": "已评分",
+      "score": 86.25
     },
     {
       "task": "bw_0208",
       "role": "opus",
-      "status": "排队中",
-      "score": null
+      "status": "已评分",
+      "score": 82.5
     },
     {
       "task": "bw_0208",
       "role": "astra",
-      "status": "排队中",
-      "score": null
+      "status": "已评分",
+      "score": 82.5
     },
     {
       "task": "bw_0210",
       "role": "opus",
-      "status": "排队中",
-      "score": null
+      "status": "已评分",
+      "score": 80.625
     },
     {
       "task": "bw_0210",
       "role": "astra",
-      "status": "排队中",
-      "score": null
+      "status": "已评分",
+      "score": 72.62755102040816
     },
     {
       "task": "bw_0223",
       "role": "opus",
-      "status": "排队中",
-      "score": null
+      "status": "已评分",
+      "score": 56.458333333333336
     },
     {
       "task": "bw_0223",
       "role": "astra",
-      "status": "排队中",
-      "score": null
+      "status": "已评分",
+      "score": 51.25
     }
   ],
-  "updated_at": 1794638553.8483515
+  "updated_at": 1794765146.75284
 }

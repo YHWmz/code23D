@@ -1,0 +1,3008 @@
+{
+  "ok": false,
+  "complete": true,
+  "expected_runs": 60,
+  "audited_runs": 60,
+  "successful_runs": 52,
+  "global_errors": [],
+  "runs": [
+    {
+      "role": "opus",
+      "task_id": "bw_0005",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 2,
+        "bytes": 10084687,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0005",
+        "modality": "image",
+        "ok": true,
+        "score": 84.375,
+        "rubric_score": 100.0,
+        "dimension_score": 68.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered eight newly generated 1024x1024 Cycles views at 64 samples using CPU after no supported OPTIX/CUDA device was available. Views 01-05 provide complementary room-scale overviews, including the submitted corner camera; views 06-08 provide close evidence of the island shelf and rug, shelf contents, and child activity table/stools. All PNGs were opened and inspected. View 03 was reframed twice to keep the rear overview inside the room and avoid camera intersection."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 68.75,
+        "score": 84.375
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0010",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 2,
+        "bytes": 8243672,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0010",
+        "modality": "image",
+        "ok": true,
+        "score": 78.125,
+        "rubric_score": 93.75,
+        "dimension_score": 62.5,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Eight newly rendered 1024x1024 CYCLES views at 64 samples, using CPU after no NVIDIA GPU utility/device was available. Retained submitted lighting, materials, denoising, visibility, and color management. View 01 uses the submitted elevated-oblique camera; views 02-06 give complementary frontal and diagonal room-wide coverage; views 07-08 give closer coverage of orange pipe fittings, green-pipe crossings, blue cables, ladder trays, ducts, round ductwork, and suspension. Every initial render was inspected and framing was accepted without corrective re-renders."
+      },
+      "independent_score": {
+        "rubric_score": 93.75,
+        "dimension_score": 62.5,
+        "score": 78.125
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0015",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 2,
+        "bytes": 12867298,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0015",
+        "modality": "image",
+        "ok": true,
+        "score": 76.00543478260869,
+        "rubric_score": 78.26086956521739,
+        "dimension_score": 73.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All views were newly rendered at 1024x1024 with 64 CYCLES samples using CPU; no OPTIX or CUDA device was available. View 01 retains the submitted camera and shows the planet window, corridor depth, warm alarm lighting, signage, and services. Views 02-04 provide complementary wide/deep interior coverage of the rounded-hexagonal receding frames, floor, wall panels, and lighting; view 04 was corrected once to avoid a wall-dominated frame. View 05 details the left-side window/planet and interior window treatment. View 06 makes the green EXIT sign and layered overhead frame legible. Views 07-08 detail the ceiling and right-side pipes, cables, panels, valves, and frame/floor material response. Scene lighting, materials, geometry, visibility, denoising, animation, and color management were preserved."
+      },
+      "independent_score": {
+        "rubric_score": 78.26086956521739,
+        "dimension_score": 73.75,
+        "score": 76.00543478260869
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0016",
+      "errors": [
+        "Official scoring unsuccessful: Render agent failed; see evaluation/render_agent.jsonl"
+      ],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 6,
+        "bytes": 20078108,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0016",
+        "modality": "image",
+        "ok": false,
+        "score": 0.0,
+        "rubric_score": null,
+        "dimension_score": null,
+        "error": "Render agent failed; see evaluation/render_agent.jsonl"
+      }
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0031",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 21,
+        "bytes": 8595847,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0031",
+        "modality": "image",
+        "ok": true,
+        "score": 90.625,
+        "rubric_score": 100.0,
+        "dimension_score": 81.25,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered and visually inspected eight complementary 1024x1024 Cycles views at 64 samples on CPU. Views 01-02 use the submitted overview and close-up cameras; 03-04 are alternate room-wide views; 05 shows the yellow GRID simulation board; 06 shows the main slanted control desk; 07 shows the instrument wall and ventilation grille; 08 shows the smaller right-corner console. All initial framings were accepted without corrective re-renders."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 81.25,
+        "score": 90.625
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0037",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 11382391,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0037",
+        "modality": "image",
+        "ok": true,
+        "score": 82.1590909090909,
+        "rubric_score": 81.81818181818181,
+        "dimension_score": 82.5,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight 1024x1024, 64-sample Cycles renders were newly generated from final.blend and visually inspected. Views 01-04 provide the submitted and alternate wide interior coverage; views 05-08 detail the striped coffee awning, CONNECT floor display, patterned rug with central low table and modular seating, and unsupported hovering drone. CPU was used because neither OPTIX nor CUDA was available. View 05 was corrected once for coffee-corner framing and view 06 once for full display framing; no other corrections were needed."
+      },
+      "independent_score": {
+        "rubric_score": 81.81818181818181,
+        "dimension_score": 82.5,
+        "score": 82.1590909090909
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0045",
+      "errors": [
+        "Official scoring unsuccessful: Render agent failed; see evaluation/render_agent.jsonl"
+      ],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 2,
+        "bytes": 51545556,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0045",
+        "modality": "image",
+        "ok": false,
+        "score": 0.0,
+        "rubric_score": null,
+        "dimension_score": null,
+        "error": "Render agent failed; see evaluation/render_agent.jsonl"
+      }
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0069",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 7,
+        "bytes": 208890942,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0069",
+        "modality": "image",
+        "ok": true,
+        "score": 72.56944444444444,
+        "rubric_score": 88.88888888888889,
+        "dimension_score": 56.25,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight PNGs were newly rendered from .eval_workspace/final.blend at 1024x1024 with Cycles, 64 samples, retained denoising, and CPU rendering (no supported NVIDIA GPU was detected). View 01 preserves the submitted camera. Views 02-04 provide close overhead and opposite container-facing compositions; views 05-07 detail the glossy teal thorax disc, compound eyes/antennae, and abdomen with iridescent wings; view 08 is an interior oblique full-body/leg support view. Each output was inspected after rendering. View 04 was re-rendered once to correct its evaluator focus; no submitted scene data was saved or altered."
+      },
+      "independent_score": {
+        "rubric_score": 88.88888888888889,
+        "dimension_score": 56.25,
+        "score": 72.56944444444444
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0075",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 2,
+        "bytes": 18655923,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0075",
+        "modality": "image",
+        "ok": true,
+        "score": 77.5,
+        "rubric_score": 85.0,
+        "dimension_score": 70.0,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight PNGs were newly rendered from final.blend with Cycles at 1024x1024, 64 samples, retained scene denoising, and CPU (no CUDA/OPTIX device was available). View 01 uses the submitted active camera. Views 02-03 and 07 present alternate broad near-level compositions emphasizing the complete layered ridge system, aerial recession, sky gradient, and clouds. Views 04-05 are tighter ridge/haze details; view 06 is a cloud-and-horizon detail; view 08 is an elevated alternate perspective on the ridge stack. Each output was opened and visually inspected. Corrective re-renders replaced early framings for views 02, 03, 07, and 08 where foreground geometry entered the frame; all corrections remained within the three-attempt limit."
+      },
+      "independent_score": {
+        "rubric_score": 85.0,
+        "dimension_score": 70.0,
+        "score": 77.5
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0079",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 6,
+        "bytes": 47514923,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0079",
+        "modality": "image",
+        "ok": true,
+        "score": 80.45454545454545,
+        "rubric_score": 90.9090909090909,
+        "dimension_score": 70.0,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight newly rendered 1024x1024 Cycles views used 64 samples on CPU; denoising and authored scene appearance were retained. Inspected each PNG after rendering. Views 01-04 use the submitted wide, elevated-bank, low-water, and shore cameras; views 05-06 are close details of the standing egret and grouped waterfowl; views 07-08 provide an opposite-bank wide composition and a close wooden water-frame/material detail. No corrective re-renders were required."
+      },
+      "independent_score": {
+        "rubric_score": 90.9090909090909,
+        "dimension_score": 70.0,
+        "score": 80.45454545454545
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0080",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 16,
+        "bytes": 52395323,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0080",
+        "modality": "image",
+        "ok": true,
+        "score": 83.4375,
+        "rubric_score": 90.625,
+        "dimension_score": 76.25,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered all evidence views in Cycles at 1024x1024 with 64 samples on CPU; no OPTIX or CUDA device was available. Views cover the submitted hero composition, alternate wide exterior/interior angles, dashboard/instrument and wood-rim steering details, red leather seating, windscreen/mirror/wiper treatment, and manual shifter/carpet. Inspected every PNG. Re-rendered view_05 once to remove cockpit-rim occlusion from the steering detail and view_06 once to provide an unobstructed seat upholstery detail; no other corrective re-renders were required."
+      },
+      "independent_score": {
+        "rubric_score": 90.625,
+        "dimension_score": 76.25,
+        "score": 83.4375
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0081",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 2,
+        "bytes": 5919397,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0081",
+        "modality": "image",
+        "ok": true,
+        "score": 82.125,
+        "rubric_score": 88.0,
+        "dimension_score": 76.25,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight newly rendered 1024x1024 Cycles views used 64 samples on the available CPU device with the scene denoising retained. View 01 uses the submitted low-angle authored camera; views 02-05 are complementary low and elevated site overviews; views 06-08 are inspected detail views of the mast apex/lattice/flag and cables, raised platform/stairs/substructure, and dark-red truck-mounted crane. No corrective re-renders were required."
+      },
+      "independent_score": {
+        "rubric_score": 88.0,
+        "dimension_score": 76.25,
+        "score": 82.125
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0088",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 172740488,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0088",
+        "modality": "image",
+        "ok": true,
+        "score": 78.75,
+        "rubric_score": 90.0,
+        "dimension_score": 67.5,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All views were newly rendered at 1024x1024 with Cycles, 64 samples, and the submitted denoising/color-management, lighting, materials, and visibility retained. CPU was used because no supported NVIDIA GPU/OPTIX device was available. View 01 begins with the submitted low-angle camera; views 02-05 are complementary wide low-angle/context views; views 06-08 inspect mid-tower balconies, upper cantilevers, and the lower facade/street interface. The first trial for view 02 encountered an enclosing environment mesh, so its camera was corrected once within the source camera quadrant and the final PNG was inspected."
+      },
+      "independent_score": {
+        "rubric_score": 90.0,
+        "dimension_score": 67.5,
+        "score": 78.75
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0102",
+      "errors": [
+        "Generation not successfully terminated",
+        "Expected a per-task submission ZIP"
+      ],
+      "generation_finished": false,
+      "input_hash_mismatches": []
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0103",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 2,
+        "bytes": 2644758,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0103",
+        "modality": "text",
+        "ok": true,
+        "score": 80.0,
+        "rubric_score": 87.5,
+        "dimension_score": 72.5,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight 1024x1024 views were newly rendered from final.blend in Cycles at 64 samples using CPU (no supported OptiX/CUDA device was available). View 01 uses the submitted camera at frame 1. Views 03-06 use the submitted camera at complementary turntable frames 91, 46, 136, and 23; view 02 is a front label view; views 07 and 08 are pump/nozzle and blank-label details. Inspected every PNG. Corrected the framing of views 02, 03, and 04 once each to keep the product clearly presented; no other corrections were needed."
+      },
+      "independent_score": {
+        "rubric_score": 87.5,
+        "dimension_score": 72.5,
+        "score": 80.0
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0107",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 59034638,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0107",
+        "modality": "text",
+        "ok": true,
+        "score": 87.5,
+        "rubric_score": 100.0,
+        "dimension_score": 75.0,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All evidence views were newly rendered from final.blend at 1024x1024 with Cycles, 64 samples, and the submitted denoising/color-management settings retained. GPU discovery reported no OPTIX or CUDA devices, so CPU was used. View 01 is the submitted 24 mm low-angle camera; views 02-04 provide complementary wide/site relationships; view 05 details the skybridge joining its two auxiliary towers; view 06 documents the five floating capsule pods (corrected once from a too-tight crop); view 07 details the curved glazed main facade, mullions, and vertical emission; view 08 shows the concrete plaza, linear lights, planting, towers, and pod route. Each final PNG was opened and inspected."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 75.0,
+        "score": 87.5
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0109",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 4,
+        "bytes": 20255470,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0109",
+        "modality": "text",
+        "ok": true,
+        "score": 57.564655172413794,
+        "rubric_score": 41.37931034482759,
+        "dimension_score": 73.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight images were newly rendered from final.blend at 1024x1024 with Cycles, 64 samples, and the scene denoising retained. CPU was used because no supported OPTIX or CUDA device was available. Views 01 and 02 use the submitted frontal and oblique cameras; 03, 04, and 08 are complementary wide street compositions; 05 and 06 detail the neon bar and warm noodle/shop facade; 07 details the covered bus stop. Each PNG was opened and inspected after rendering; no corrective rerenders were required."
+      },
+      "independent_score": {
+        "rubric_score": 41.37931034482759,
+        "dimension_score": 73.75,
+        "score": 57.564655172413794
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0114",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 203,
+        "bytes": 486193058,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0114",
+        "modality": "text",
+        "ok": true,
+        "score": 88.75,
+        "rubric_score": 100.0,
+        "dimension_score": 77.5,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight newly rendered 1024x1024 Cycles views used 64 samples on CPU; no supported OptiX or CUDA device was available. View 01 uses the submitted camera at frame 200 for the completed MOMENTUM title. Views 02 and 03 are complementary wide assembly-stage overviews at frames 100 and 145. Views 04 and 06 are corrected detail framings of the gear drive and lower conveyor/drive linkage; view 05 isolates the conveyor and moving letter blanks. View 07 focuses on both articulated arms handling letters during assembly. View 08 is a corrected front title-card view at frame 200 showing the final readable word, title rack, and machine. Every PNG was opened and inspected after its final render. Corrective rerenders: view_04 (1), view_06 (1), view_08 (1)."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 77.5,
+        "score": 88.75
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0118",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 2,
+        "bytes": 55280191,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0118",
+        "modality": "text",
+        "ok": true,
+        "score": 74.6590909090909,
+        "rubric_score": 81.81818181818181,
+        "dimension_score": 67.5,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All views were newly rendered from final.blend at 1024x1024 with Cycles 64 samples on CPU, retaining the scene lighting, materials, visibility, denoising, and color management. view_01 preserves the submitted low 35 mm camera. view_02 is a wide south overview; views_03 and _04 are unobstructed three-quarter plaza compositions; view_05 is an elevated layout view showing the centered fountain, curved benches, tree rows, lamps, and paving; views_06 and _07 are fountain-flow details; view_08 is a bench-and-vintage-lamp material detail. Corrective reframing was applied twice to view_03 and once to view_04 to avoid foreground tree occlusion; no other corrective rerenders were needed."
+      },
+      "independent_score": {
+        "rubric_score": 81.81818181818181,
+        "dimension_score": 67.5,
+        "score": 74.6590909090909
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0124",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 13104878,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0124",
+        "modality": "text",
+        "ok": true,
+        "score": 85.20833333333334,
+        "rubric_score": 91.66666666666667,
+        "dimension_score": 78.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight newly rendered 1024x1024 PNGs use Cycles at 64 samples with the submission's existing denoising, lighting, materials, and color management retained. CPU was used because the Cycles device probe found no supported OPTIX or CUDA device. view_01 uses the submitted hero camera; views 02-04 provide complementary interior-wide coverage of the room, rug, toy box, window, bunk, desk, and shelf. views 05-08 provide rubric-relevant details of the bunk guardrail/ladder and bedding, desk/chair, shelf books and ornaments, and the window-lit textile/wood setting. view_03 and view_05 were each reframed once after inspection to remove poor clipping and improve subject coverage."
+      },
+      "independent_score": {
+        "rubric_score": 91.66666666666667,
+        "dimension_score": 78.75,
+        "score": 85.20833333333334
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0148",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 10597141,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0148",
+        "modality": "text",
+        "ok": true,
+        "score": 93.125,
+        "rubric_score": 100.0,
+        "dimension_score": 86.25,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight PNGs were newly rendered from .eval_workspace/final.blend at 1024x1024 with Cycles and 64 samples; the available render device was CPU (OPTIX/CUDA unavailable). View 01 preserves the submitted oblique-camera framing. Views 02-04 provide complementary wide and elevated layouts of the breadboard and complete red split-return-recombine route. Views 05-08 are inspected detail views covering the laser/plate-beamsplitter junction, micrometer translation-stage movable mirror, compensation plate/fixed-mirror arm, and recombined screen output. No corrective re-renders were needed."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 86.25,
+        "score": 93.125
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0160",
+      "errors": [
+        "Official scoring unsuccessful: Render agent failed; see evaluation/render_agent.jsonl"
+      ],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 5,
+        "bytes": 98697156,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0160",
+        "modality": "text",
+        "ok": false,
+        "score": 0.0,
+        "rubric_score": null,
+        "dimension_score": null,
+        "error": "Render agent failed; see evaluation/render_agent.jsonl"
+      }
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0167",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 422,
+        "bytes": 420222987,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0167",
+        "modality": "text",
+        "ok": true,
+        "score": 71.875,
+        "rubric_score": 70.0,
+        "dimension_score": 73.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered frame 110 from the submitted final.blend. view_01 uses the submitted previz camera; views_02, 03, 04, and 08 are complementary elevated/diagonal canvas overviews; view_05 is a low frontal overview; views_06 and 07 are convergence/ripple detail views. Each image was rendered new in Cycles at 1024x1024 with 64 samples and visually inspected. Cycles device detection exposed only the Intel Xeon CPU, so CPU was used; the submission's existing denoising, lighting, materials, visibility, and color management were retained. No corrective image re-renders were required."
+      },
+      "independent_score": {
+        "rubric_score": 70.0,
+        "dimension_score": 73.75,
+        "score": 71.875
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0175",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 67032119,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0175",
+        "modality": "text",
+        "ok": true,
+        "score": 69.375,
+        "rubric_score": 75.0,
+        "dimension_score": 63.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered and visually inspected eight newly generated 1024x1024 Cycles views at 64 samples on CPU with the submission's denoising retained. Views cover the submitted hero camera, elevated front-left and front-right full aircraft views, rear-left full view, top plan layout, left profile, canopy/hinge detail, and front duct/fan detail. No corrective re-renders were needed."
+      },
+      "independent_score": {
+        "rubric_score": 75.0,
+        "dimension_score": 63.75,
+        "score": 69.375
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0180",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 2,
+        "bytes": 50127945,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0180",
+        "modality": "image",
+        "ok": true,
+        "score": 86.875,
+        "rubric_score": 100.0,
+        "dimension_score": 73.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All views were newly rendered from final.blend in CYCLES at 1024x1024 with 64 samples. CPU was used because no supported NVIDIA GPU was available. view_01 uses the submitted FlyCam at frame 1; views 02-05 provide symmetrical, elevated, and left/right wide waterfront coverage; views 06-08 provide close coverage of the rotunda, ornament, colonnade, shoreline, water, and planting. Each PNG was inspected after its initial render; no corrective rerenders were required."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 73.75,
+        "score": 86.875
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0192",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 99817182,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0192",
+        "modality": "image",
+        "ok": true,
+        "score": 69.75,
+        "rubric_score": 82.0,
+        "dimension_score": 57.5,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight 1024x1024 PNGs were newly rendered from .eval_workspace/final.blend in Cycles at 64 samples with the scene's existing denoising, lighting, materials, and color management retained. CPU was the actual available Cycles device (no supported OPTIX/CUDA device). view_01 uses the submitted frontal camera and view_02 the submitted three-quarter camera; views_03-05 add opposite three-quarter, profile, and rear-jacket construction coverage; views_06-08 provide frontal facial anatomy, three-quarter facial-plane, and collar/button material details. view_01 and view_02 were each corrected once to use their submitted cameras after initial evaluator-camera framing; all final PNGs were opened and visually inspected."
+      },
+      "independent_score": {
+        "rubric_score": 82.0,
+        "dimension_score": 57.5,
+        "score": 69.75
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0205",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 146433723,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0205",
+        "modality": "image",
+        "ok": true,
+        "score": 85.0,
+        "rubric_score": 100.0,
+        "dimension_score": 70.0,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight newly rendered 1024x1024 Cycles views used 64 samples with the scene's existing denoising and color management preserved. CPU was the actual available Cycles device after neither OPTIX nor CUDA was available. view_01 uses submitted MainCamera; view_02 uses submitted OverviewCamera; views_03-04 and view_08 are complementary wide views documenting broad salt-flat context and the physical near/far separation; view_05 is a girl face/mouth, sunglasses, hair, and green-shirt detail; views_06-07 are vehicle, wheel/body, roof-rack, and blue cargo details. Each PNG was opened and visually inspected after rendering; no corrective rerenders were required."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 70.0,
+        "score": 85.0
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0208",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 4,
+        "bytes": 72062659,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0208",
+        "modality": "image",
+        "ok": true,
+        "score": 82.5,
+        "rubric_score": 100.0,
+        "dimension_score": 65.0,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight views were freshly rendered from final.blend in Cycles at 1024x1024 with 64 samples on CPU; no CUDA or OPTIX device was available. View 01 uses the submitted primary camera. Views 02, 03, 04, 07, and 08 provide alternate low/wide and architectural perspectives; views 05 and 06 are subject and cup/saucer detail views. Each output PNG was opened and inspected after rendering. No corrective rerenders were needed."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 65.0,
+        "score": 82.5
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0210",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 2,
+        "bytes": 26698844,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0210",
+        "modality": "video",
+        "ok": true,
+        "score": 80.625,
+        "rubric_score": 100.0,
+        "dimension_score": 61.25,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight 1024x1024 Cycles renders used 64 samples and retained the submitted scene's denoising, lighting, materials, visibility, and color management. CPU was the available Cycles device after OPTIX/CUDA checks. View 01 uses the submitted GoPro fisheye camera at the mid-exchange. Views 02-06 provide complementary fisheye wide, side, reverse, elevated, and crowd-level views of the ring, audience, trees, buildings, and practical lamps at action frames 22, 44, and 66. Views 07-08 are close fighter/official detail views. View 02 was corrected twice to match the submitted polynomial fisheye mapping; view 06 was corrected once to remove a corner-post obstruction. Each final PNG was opened and inspected."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 61.25,
+        "score": 80.625
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "opus",
+      "task_id": "bw_0223",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 7,
+        "bytes": 165008413,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0223",
+        "modality": "video",
+        "ok": true,
+        "score": 56.458333333333336,
+        "rubric_score": 66.66666666666667,
+        "dimension_score": 46.25,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All views were newly rendered at 1024x1024 with CYCLES, 64 samples, retained scene denoising and color management, using CPU because no CUDA or OPTIX device was available. Views 01 and 02 use the submitted animated camera at opening interaction and late shared reaction frames. Views 03-05 provide wide interior and complementary passenger-compartment angles; views 06 and 07 are speaker and interacting-woman performance details; view 08 is an elevated exterior vehicle/context view. All PNGs were inspected. View 06 was corrected once after the animated vehicle moved outside its initial custom camera framing."
+      },
+      "independent_score": {
+        "rubric_score": 66.66666666666667,
+        "dimension_score": 46.25,
+        "score": 56.458333333333336
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0005",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 50892158,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0005",
+        "modality": "image",
+        "ok": true,
+        "score": 81.94444444444444,
+        "rubric_score": 88.88888888888889,
+        "dimension_score": 75.0,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered the submitted corner camera first, then complementary opposite-corner, rear-corner, and side overviews. Detail views document the child activity tables and stools, window-wall shelving, freestanding Montessori material island, art shelf, piano, and round rug. All PNGs were inspected after rendering; no framing or clipping corrections were needed. Cycles ran on CPU because no supported OPTIX or CUDA device was available; the submitted scene denoising and color management were retained."
+      },
+      "independent_score": {
+        "rubric_score": 88.88888888888889,
+        "dimension_score": 75.0,
+        "score": 81.94444444444444
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0010",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 34880772,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0010",
+        "modality": "image",
+        "ok": true,
+        "score": 71.5625,
+        "rubric_score": 84.375,
+        "dimension_score": 58.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Eight newly rendered 1024x1024 CYCLES views at 64 samples. Started with the submitted elevated-oblique overview, then captured three complementary wide oblique route views and four targeted details for the orange valve network, upper ladder tray/green pipes/blue cable corridor, lower galvanised duct and grey round pipe system, and right-side service housing. All PNGs were opened and inspected after rendering. Views 01, 03, and 08 each received one framing correction to reduce empty floor/background and better fit the relevant services; all other views required no correction. No authored geometry, materials, visibility, lighting, animation, denoising, or color management was altered. GPU device support was unavailable, so the actual Cycles device was CPU."
+      },
+      "independent_score": {
+        "rubric_score": 84.375,
+        "dimension_score": 58.75,
+        "score": 71.5625
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0015",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 2,
+        "bytes": 46607020,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0015",
+        "modality": "image",
+        "ok": true,
+        "score": 90.625,
+        "rubric_score": 100.0,
+        "dimension_score": 81.25,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight views were newly rendered at 1024x1024 with Cycles, 64 samples, and the submission's denoising retained. CPU was used after neither OptiX nor CUDA reported an available render device. View 01 uses the submitted hero camera; views 02, 04, 05, and 06 provide complementary wide/centered corridor coverage; view 03 isolates the orange planet at the left observation window; views 07 and 08 are detail views for EXIT signage and the ceiling/right-side pipe-and-cable service network. Each PNG was opened and inspected. View 03 was corrected once to frame the planet, and view 08 was corrected once after an initial obstructed framing."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 81.25,
+        "score": 90.625
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0016",
+      "errors": [
+        "Official scoring unsuccessful: Render agent failed; see evaluation/render_agent.jsonl"
+      ],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 5,
+        "bytes": 40509015,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0016",
+        "modality": "image",
+        "ok": false,
+        "score": 0.0,
+        "rubric_score": null,
+        "dimension_score": null,
+        "error": "Render agent failed; see evaluation/render_agent.jsonl"
+      }
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0031",
+      "errors": [
+        "Official scoring unsuccessful: Render agent failed; see evaluation/render_agent.jsonl"
+      ],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 11,
+        "bytes": 21506029,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0031",
+        "modality": "image",
+        "ok": false,
+        "score": 0.0,
+        "rubric_score": null,
+        "dimension_score": null,
+        "error": "Render agent failed; see evaluation/render_agent.jsonl"
+      }
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0037",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 2,
+        "bytes": 10670674,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0037",
+        "modality": "image",
+        "ok": true,
+        "score": 84.20454545454545,
+        "rubric_score": 90.9090909090909,
+        "dimension_score": 77.5,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered from final.blend using Cycles at 1024x1024 and 64 samples per view; no supported GPU was available, so CPU was used. View 01 retains the submitted three-quarter camera. Views 02, 03, and 05 provide alternate elevated room coverage. Views 04, 06, and 07 are fitted details of the CONNECT floor display, rug/modular lounge, and striped coffee corner respectively; view 08 supplies an alternate screen-and-drone context. Every PNG was opened after rendering. Camera framing was corrected where needed (views 02, 03, 04, 06, 07, and 08); each view remained within the three-attempt limit. Scene geometry, materials, lighting, visibility, and color management were not altered or saved."
+      },
+      "independent_score": {
+        "rubric_score": 90.9090909090909,
+        "dimension_score": 77.5,
+        "score": 84.20454545454545
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0045",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 98805043,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0045",
+        "modality": "image",
+        "ok": true,
+        "score": 76.73076923076923,
+        "rubric_score": 88.46153846153847,
+        "dimension_score": 65.0,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered and inspected eight newly generated 1024x1024 Cycles views at 64 samples. view_01 uses the submitted perspective camera; views 02-05 provide complementary aisle, reverse, elevated, and opposite-side wide coverage; views 06-07 are close details of the raised bed/curb, galvanized divider hardware, Holstein coat, and wet muzzle; view_08 frames the blue rear door and surrounding barn circulation. No framing, clipping, or render-setting corrections were necessary after initial inspection. CPU was selected because no supported GPU device was available."
+      },
+      "independent_score": {
+        "rubric_score": 88.46153846153847,
+        "dimension_score": 65.0,
+        "score": 76.73076923076923
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0069",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 7,
+        "bytes": 157369114,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0069",
+        "modality": "image",
+        "ok": true,
+        "score": 83.125,
+        "rubric_score": 100.0,
+        "dimension_score": 66.25,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered and inspected all eight 1024x1024 Cycles views at 64 samples. view_01 uses the submitted hero camera; views_02, _03, and _08 provide complementary oblique, top-down, and side-context container/wood compositions; views_04 and _05 isolate head, compound-eye, antenna, thoracic-fuzz, and glossy marker detail; view_06 emphasizes striped abdomen and both transparent veined wings; view_07 shows leg articulation, tabletop contact, and rim context. No corrective re-renders were necessary. OPTIX and CUDA exposed no usable GPU, so Cycles rendered on CPU; scene denoising, lighting, materials, visibility, and color management were retained."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 66.25,
+        "score": 83.125
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0075",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 14,
+        "bytes": 190905708,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0075",
+        "modality": "image",
+        "ok": true,
+        "score": 89.375,
+        "rubric_score": 100.0,
+        "dimension_score": 78.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight 1024x1024 views were newly rendered from final.blend in Cycles at 64 samples with the scene denoising retained. CPU was used after no supported OPTIX or CUDA device was available. View 01 begins with the submitted level camera composition; view 02 is a centered expansive composition; views 04 and 05 shift the field across the ridge system; view 06 emphasizes cloud, sky glaze, and pale distant ridge treatment; views 07 and 08 provide broader and closer ridge/atmosphere detail coverage. Camera framing was adjusted only for evaluator views and the submitted blend was not saved or modified."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 78.75,
+        "score": 89.375
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0079",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 364614653,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0079",
+        "modality": "image",
+        "ok": true,
+        "score": 70.9090909090909,
+        "rubric_score": 81.81818181818181,
+        "dimension_score": 60.0,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered from the submitted final.blend in Cycles at 1024x1024 with 64 samples, retaining the authored compositor/denoising and color management. CPU was used because no supported GPU was available. View 01 uses the submitted master camera; views 02-05 provide complementary wide riverbank compositions; views 06-08 are detail views of the teal flock, fishing-frame construction, standing and flying egrets, bleached alder, flowers, bark, and water surface. Each PNG was opened and inspected. Views 02 and 03 were rerendered once with elevated evaluator framing to remove visible scene-plane edges; all other views required no correction."
+      },
+      "independent_score": {
+        "rubric_score": 81.81818181818181,
+        "dimension_score": 60.0,
+        "score": 70.9090909090909
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0080",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 18,
+        "bytes": 98441916,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0080",
+        "modality": "image",
+        "ok": true,
+        "score": 89.375,
+        "rubric_score": 100.0,
+        "dimension_score": 78.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered all views freshly from .eval_workspace/final.blend at 1024x1024 with CYCLES, 64 samples, retained scene denoising, lighting, and color management. CPU was the only available Cycles device. view_01 uses the submitted active camera; views_02 through 04 are complementary wide cockpit views; views_05 through 08 provide interior detail evidence for the wood-rim steering wheel, gauges, dashboard grille and controls, shifter, black mats, red upholstery, door trim, windshield, mirror, and wipers. All eight PNGs were visually inspected; no corrective re-renders were needed."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 78.75,
+        "score": 89.375
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0081",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 22739176,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0081",
+        "modality": "image",
+        "ok": true,
+        "score": 89.375,
+        "rubric_score": 100.0,
+        "dimension_score": 78.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered from the submitted final.blend at 1024x1024 with Cycles and 64 samples. CPU was used because no supported NVIDIA GPU/OPTIX or CUDA device was available. View 01 uses the submitted low-angle hero camera; view 02 uses the submitted drill-floor detail camera. Views 03-06 are complementary wide perspectives, and views 07-08 are crane/platform and lattice-tower detail views. Each PNG was opened and inspected after rendering; framing and render settings were acceptable on the initial render, so no corrective rerenders were needed."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 78.75,
+        "score": 89.375
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0088",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 8,
+        "bytes": 145797163,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0088",
+        "modality": "image",
+        "ok": true,
+        "score": 80.625,
+        "rubric_score": 90.0,
+        "dimension_score": 71.25,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight 1024x1024 PNGs were newly rendered from the submitted final.blend in Cycles at 64 samples, retaining the authored denoising, lighting, world, and color management. CPU was used because no supported OPTIX/CUDA device was available. Views 01-03 use the submitted hero, balcony-study, and arrival cameras; views 04-05 add complementary full-height three-quarter views; views 06-08 are facade and cantilever detail views focused on recessed glazing, stone panel grid, balcony glass/metal guards, planting, and furniture. Each initial render was opened and inspected; no corrective rerenders were necessary."
+      },
+      "independent_score": {
+        "rubric_score": 90.0,
+        "dimension_score": 71.25,
+        "score": 80.625
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0102",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 26700124,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0102",
+        "modality": "text",
+        "ok": true,
+        "score": 86.875,
+        "rubric_score": 100.0,
+        "dimension_score": 73.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Eight newly rendered 1024x1024 Cycles/64-sample CPU views. View 01 uses the submitted nucleus-focused camera; views 02-04 are complementary wide cutaway overviews; views 05-08 document the nucleus/nucleolus/nuclear pores, rough ER with bound and free ribosomes, Golgi plus mitochondria, and exposed phospholipid bilayer. View 03 was reframed twice to remove an unwanted cyclorama edge; no submitted scene content was changed. Each PNG was inspected after rendering."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 73.75,
+        "score": 86.875
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0103",
+      "errors": [
+        "Official scoring unsuccessful: Render agent failed; see evaluation/render_agent.jsonl"
+      ],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 4,
+        "bytes": 35617961,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0103",
+        "modality": "text",
+        "ok": false,
+        "score": 0.0,
+        "rubric_score": null,
+        "dimension_score": null,
+        "error": "Render agent failed; see evaluation/render_agent.jsonl"
+      }
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0107",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 4,
+        "bytes": 93651644,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0107",
+        "modality": "text",
+        "ok": true,
+        "score": 77.21153846153845,
+        "rubric_score": 76.92307692307692,
+        "dimension_score": 77.5,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All views were newly rendered from final.blend in Cycles at 1024x1024 with 64 samples; original denoising, materials, lighting, visibility, and color management were retained. CPU was selected because Blender detected no OPTIX or CUDA device. Views cover the submitted low-angle camera, two complementary wide ground views, an elevated spatial overview, a skybridge detail, a capsule-transport detail, a principal-facade material detail, and a plaza/linear-light/planting detail. view_06 was corrected twice to obtain a clear final capsule-detail framing."
+      },
+      "independent_score": {
+        "rubric_score": 76.92307692307692,
+        "dimension_score": 77.5,
+        "score": 77.21153846153845
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0109",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 6,
+        "bytes": 68365647,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0109",
+        "modality": "text",
+        "ok": true,
+        "score": 75.58189655172413,
+        "rubric_score": 72.41379310344827,
+        "dimension_score": 78.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered eight newly generated 1024x1024 Cycles views at 64 samples from .eval_workspace/final.blend on CPU (the scene exposed no supported OPTIX/CUDA device). Views 01 and 02 use the submitted low frontal and low oblique cameras. Detail views cover the warm noodle storefront, neon bar and lowered grocery shutter, illuminated parked car and wet headlight reflection, bus-stop shelter, deep rain-soaked street architecture, and a low puddle/zebra/manhole/reflection composition. All PNGs were visually inspected; view_06 was corrected twice to center the shelter detail."
+      },
+      "independent_score": {
+        "rubric_score": 72.41379310344827,
+        "dimension_score": 78.75,
+        "score": 75.58189655172413
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0114",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 407,
+        "bytes": 479631083,
+        "blend_files": [
+          "a.blend",
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0114",
+        "modality": "text",
+        "ok": true,
+        "score": 93.75,
+        "rubric_score": 100.0,
+        "dimension_score": 87.5,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight images were newly rendered from .eval_workspace/final.blend with Cycles at 1024x1024 and 64 samples; no GPU device was available, so CPU was used. View 01 uses the submitted 35 mm camera at the completed title. Views 02 and 03 are complementary complete-machine views at the final and early-drive stages. Views 04 and 05 isolate the meshing gear train and twin cam/push-rod layer. View 06 shows the 2 m conveyor feeding scattered type at the pickup stage. View 07 shows both articulated arms during transfer. View 08 is a close final-title/register/locking detail. Every rendered PNG was opened and inspected; no corrective re-renders were needed."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 87.5,
+        "score": 93.75
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0118",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 110647257,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0118",
+        "modality": "text",
+        "ok": true,
+        "score": 85.45454545454545,
+        "rubric_score": 90.9090909090909,
+        "dimension_score": 80.0,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered all views at 1024x1024 with 64 Cycles samples on CPU; retained the authored scene lighting, materials, visibility, color management, and denoising. View 01 uses the submitted low 35 mm camera. Views 02, 03, 04, 05, and 08 provide complementary plaza-wide/contextual angles; view 06 is a close fountain/water-tier detail and view 07 is a close treated-wood bench/cast-metal support and fountain detail. Every PNG was opened and inspected after rendering. View 08 was corrected once to avoid foreground tree occlusion; all other views required no correction."
+      },
+      "independent_score": {
+        "rubric_score": 90.9090909090909,
+        "dimension_score": 80.0,
+        "score": 85.45454545454545
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0124",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 8,
+        "bytes": 17897326,
+        "blend_files": [
+          "a.blend",
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0124",
+        "modality": "text",
+        "ok": true,
+        "score": 85.41666666666666,
+        "rubric_score": 83.33333333333333,
+        "dimension_score": 87.5,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight evaluator PNGs were newly rendered from .eval_workspace/final.blend at 1024x1024 with Cycles and 64 samples, retaining the scene denoising and color management. CPU was used because the Blender Cycles device query exposed only an Intel Xeon CPU (no OPTIX/CUDA device). View 01 uses the submitted hero camera; views 02-04 provide complementary wide three-quarter room views; view 05 details the bunk bed, guardrail, ladder, bedding, and oak/mint finish; view 06 details the desk, chair, toy cart, and stocked bookshelf; view 07 details the rounded rug and toy storage; view 08 details the curtains, window daylight, desk, and bookshelf. View 02 received one camera-framing correction after inspection; all other views were accepted after their initial render."
+      },
+      "independent_score": {
+        "rubric_score": 83.33333333333333,
+        "dimension_score": 87.5,
+        "score": 85.41666666666666
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0148",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 4,
+        "bytes": 27977146,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0148",
+        "modality": "text",
+        "ok": true,
+        "score": 94.375,
+        "rubric_score": 100.0,
+        "dimension_score": 88.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight newly rendered views use Cycles at 1024x1024 with 64 samples and retained scene denoising/color settings. CPU was used because no supported NVIDIA GPU device was available. Views comprise the submitted hero camera, two complementary oblique wides, an overhead optical-route view, and details of the laser/beamsplitter, micrometer translation stage, second arm/compensation plates, and screen/recombination. Each PNG was opened and inspected; no corrective rerenders were needed."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 88.75,
+        "score": 94.375
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0160",
+      "errors": [
+        "Generation not successfully terminated",
+        "Expected a per-task submission ZIP"
+      ],
+      "generation_finished": false,
+      "input_hash_mismatches": []
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0167",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 424,
+        "bytes": 1592456696,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0167",
+        "modality": "text",
+        "ok": true,
+        "score": 64.375,
+        "rubric_score": 60.0,
+        "dimension_score": 68.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All views were newly rendered from .eval_workspace/final.blend at frame 110 with Cycles, CPU (the submitted README documents no usable GPU backend), 1024x1024 resolution, 64 samples, and the scene's existing denoising and color management. View 01 uses the submitted camera; views 02-05 are complementary full-canvas wide angles; views 06-08 are convergence, low ripple/ball, and overhead trail-crossing details. Each view was inspected after rendering and was accepted on its initial render; no corrective rerenders were needed. PNG headers verified eight valid 1024x1024 16-bit RGBA files."
+      },
+      "independent_score": {
+        "rubric_score": 60.0,
+        "dimension_score": 68.75,
+        "score": 64.375
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0175",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 6,
+        "bytes": 74553580,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0175",
+        "modality": "text",
+        "ok": true,
+        "score": 81.04166666666666,
+        "rubric_score": 83.33333333333333,
+        "dimension_score": 78.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png",
+          "view_09.png"
+        ],
+        "notes": "All final evidence images were newly rendered from final.blend at 1024x1024 with Cycles, 64 samples, CPU device, and the submitted scene's denoising, lighting, materials, visibility, and color management retained. View_01 uses the submitted hero camera; view_02 uses the submitted elevated teaching camera; view_03 uses the submitted side camera; view_05 is a centered four-duct layout view; view_09 is a high three-quarter overview. Views_06 and _07 provide canopy/interior and propulsion/tilt-arm detail, while view_08 focuses on the paired bow-skid supports. Hero and teaching framing were tightened once for square output. An invalid clipped custom-camera trial was discarded rather than included; the final directory contains exactly eight inspected PNGs."
+      },
+      "independent_score": {
+        "rubric_score": 83.33333333333333,
+        "dimension_score": 78.75,
+        "score": 81.04166666666666
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0180",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 5,
+        "bytes": 117766081,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0180",
+        "modality": "image",
+        "ok": true,
+        "score": 89.375,
+        "rubric_score": 100.0,
+        "dimension_score": 78.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight 1024x1024 views were newly rendered from final.blend in Cycles at 64 samples using CPU (no CUDA/OPTIX device was available). View 01 uses the submitted camera at frame 1; views 02-05 provide centered, oblique, and elevated waterfront-wide coverage; views 06-08 provide complementary architectural and shoreline detail coverage. Each initial render was inspected and accepted without corrective rerenders. Scene materials, lighting, visibility, animation, denoising, and color management were preserved; evaluator-only camera framing was not saved to the submission."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 78.75,
+        "score": 89.375
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0192",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 4,
+        "bytes": 37761389,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0192",
+        "modality": "image",
+        "ok": true,
+        "score": 60.625,
+        "rubric_score": 60.0,
+        "dimension_score": 61.25,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight images were newly rendered at 1024x1024 with Cycles at 64 samples, retaining the submission's lighting, materials, visibility, denoising, and color management. OPTIX and CUDA device discovery returned no supported devices, so Cycles rendered on CPU. Views: submitted frontal bust; submitted right three-quarter bust; opposite three-quarter bust; right and left profiles; frontal facial detail; right three-quarter facial detail; and rear three-quarter view showing the continuous jacket construction. Each render was inspected after completion; framing and clipping were acceptable, so no corrective rerenders were needed."
+      },
+      "independent_score": {
+        "rubric_score": 60.0,
+        "dimension_score": 61.25,
+        "score": 60.625
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0205",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 22821049,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0205",
+        "modality": "image",
+        "ok": true,
+        "score": 86.25,
+        "rubric_score": 100.0,
+        "dimension_score": 72.5,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All evidence was newly rendered from .eval_workspace/final.blend using Cycles at 1024x1024, 64 samples, preserved scene denoising, and CPU because no supported NVIDIA GPU/OPTIX or CUDA device was available. Views: submitted 192 mm forced-perspective main composition (01); distant wide scale/depth overview (02); full-profile human and separated vehicle scale context (03); vehicle side detail (04); vehicle front three-quarter detail (05); alternate close depth/scale composition (06); face, mouth, hair, glasses, and green-shirt detail (07); and vehicle rear three-quarter plus tiled salt-flat detail (08). Corrective rerenders refined views 02 and 06 after their initial framings did not adequately present the relevant subjects; each remained within the allowed three attempts. Each final PNG was opened and inspected; all eight are 1024x1024."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 72.5,
+        "score": 86.25
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0208",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 25074136,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0208",
+        "modality": "image",
+        "ok": true,
+        "score": 82.5,
+        "rubric_score": 100.0,
+        "dimension_score": 65.0,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All eight views were newly rendered from final.blend at 1024x1024 with 64 Cycles samples on CPU; the submitted primary camera is view_01. Complementary evidence includes low/wide side and elevated plaza views, a hand-and-spoon material/grip detail, a full surfing-pose detail, and a cup-and-saucer detail. Framing corrections: view_02 was rerendered twice to establish the alternate wide framing; view_07 was rerendered once to include the full crouched pose; view_08 was rerendered once to remove foreground-hand occlusion from the cup detail. Authored scene content, lighting, materials, visibility, animation, and color management were not changed."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 65.0,
+        "score": 82.5
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0210",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 3,
+        "bytes": 84932171,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0210",
+        "modality": "video",
+        "ok": true,
+        "score": 72.62755102040816,
+        "rubric_score": 87.75510204081633,
+        "dimension_score": 57.5,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All views were newly rendered at 1024x1024 with Cycles 64 samples, CPU (the only available Cycles device), and the submission's existing denoising and color management retained. view_01 and view_02 use the submitted animated fisheye camera at frames 48 and 73. views_03-05 are complementary elevated wide views of the ring, crowd, trees, lamps, and buildings. views_06-07 are close action details at frames 13 and 48; view_07 was corrected once to center the fighters. view_08 is a reverse crowd-side view at frame 73 and was corrected once to improve action framing. Each final PNG was opened and inspected."
+      },
+      "independent_score": {
+        "rubric_score": 87.75510204081633,
+        "dimension_score": 57.5,
+        "score": 72.62755102040816
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    },
+    {
+      "role": "astra",
+      "task_id": "bw_0223",
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 6,
+        "bytes": 28785536,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0223",
+        "modality": "video",
+        "ok": true,
+        "score": 51.25,
+        "rubric_score": 50.0,
+        "dimension_score": 52.5,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Eight newly rendered Cycles views at 1024x1024 and 64 samples using CPU (no supported OPTIX/CUDA device detected); scene denoising was retained. Views 01-04 use the submitted animated interview camera across opening, interaction, middle, and late reaction frames. View 05 is a front-wide view of the complete tuk-tuk and occupants, view 06 is an over-shoulder performance angle, view 07 establishes the vehicle in the city street, and view 08 is a close primary-pair detail showing the interaction and hand-to-chest gesture. View 08 was corrected once to fit both principal faces and the street opening."
+      },
+      "independent_score": {
+        "rubric_score": 50.0,
+        "dimension_score": 52.5,
+        "score": 51.25
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
+    }
+  ]
+}

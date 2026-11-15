@@ -48,3 +48,5 @@ python -m http.server 8080 --directory public
 ## 来源
 
 任务与参考输入来自 [Qwen/BlenderWorld](https://huggingface.co/datasets/Qwen/BlenderWorld)，官方代码为 [QwenLM/BlenderWorld](https://github.com/QwenLM/BlenderWorld)。保留上游 MIT 许可于 `BLENDERWORLD_LICENSE`。本仓库中的模型对比结果为独立实验记录，并非官方全量榜单。
+
+超过 Pages 限制的提交视频转换为最大 1280×720 的网页预览；原视频保留在服务器。补跑保持已成功评分不变，失败的初次运行留档。

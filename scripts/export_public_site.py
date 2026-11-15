@@ -1,7 +1,7 @@
 """Export an allowlisted static review snapshot for Cloudflare Pages."""
 from pathlib import Path
 from datetime import datetime,timezone
-import argparse,html,json,re,shutil
+import argparse,html,json,re,shutil,subprocess
 from PIL import Image
 p=argparse.ArgumentParser();p.add_argument('--source',default='/root/blenderworld/experiment/review_web');p.add_argument('--output',required=True);args=p.parse_args()
 src=Path(args.source);out=Path(args.output);out.mkdir(parents=True,exist_ok=True)
@@ -15,12 +15,16 @@ for f in files:
  target=out/rel;target.parent.mkdir(parents=True,exist_ok=True)
  if 'previews' in rel.parts and f.suffix.lower() in {'.png','.jpg','.jpeg'} and not f.stem.endswith('_thumb'):
   new=rel.with_suffix('.webp');target=out/new
-  with Image.open(f) as im:
-   im.thumbnail((2560,2560));im.convert('RGB').save(target,'WEBP',quality=88,method=4)
+  if not target.exists() or target.stat().st_mtime < f.stat().st_mtime:
+   with Image.open(f) as im:
+    im.thumbnail((2560,2560));im.convert('RGB').save(target,'WEBP',quality=88,method=4)
   converted[str(rel)]=str(new)
+ elif 'previews' in rel.parts and f.suffix.lower()=='.mp4' and f.stat().st_size>25*1024**2:
+  if not target.exists() or target.stat().st_mtime < f.stat().st_mtime:
+   subprocess.run(['ffmpeg','-nostdin','-y','-v','error','-i',str(f),'-vf','scale=w=1280:h=720:force_original_aspect_ratio=decrease:force_divisible_by=2','-c:v','libx264','-threads','4','-crf','26','-preset','fast','-an','-movflags','+faststart',str(target)],check=True)
  else:shutil.copy2(f,target)
  if target.stat().st_size>25*1024**2:raise ValueError('Cloudflare file limit: '+str(rel))
-notice=f'<aside style="padding:14px;background:#fff4d6;border:1px solid #e8cd86;margin:16px 0">公开审核快照 · 更新时间 {html.escape(stamp)}。测试仍在进行时，状态以此快照为准；公网内容需再次同步仓库才会更新。大图为网页压缩版，原始参考输入保留。完整工程 ZIP 保存在实验服务器，未包含在本站。</aside>'
+notice=f'<aside style="padding:14px;background:#fff4d6;border:1px solid #e8cd86;margin:16px 0">公开审核快照 · 更新时间 {html.escape(stamp)}。测试仍在进行时，状态以此快照为准；公网内容需再次同步仓库才会更新。大图及超限视频为网页压缩版，原始参考输入保留。完整工程 ZIP 保存在实验服务器，未包含在本站。</aside>'
 for f in out.rglob('*'):
  if f.suffix not in {'.html','.json','.js'}:continue
  text=f.read_text()
