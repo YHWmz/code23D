@@ -1,7 +1,7 @@
 {
   "state": {
-    "status": "retrying_failed_runs",
-    "started_at": 1794765146.6009197,
+    "status": "completed",
+    "ended_at": 1794773418.4496284,
     "tasks": [
       "bw_0005",
       "bw_0010",
@@ -35,9 +35,9 @@
       "bw_0223"
     ],
     "expected_runs": 60,
-    "retry_runs": 8
+    "successful_runs": 60
   },
-  "scored_runs": 52,
+  "scored_runs": 60,
   "expected_runs": 60,
   "runs": [
     {
@@ -79,14 +79,14 @@
     {
       "task": "bw_0016",
       "role": "opus",
-      "status": "评测中",
-      "score": null
+      "status": "已评分",
+      "score": 87.5
     },
     {
       "task": "bw_0016",
       "role": "astra",
-      "status": "等待评测",
-      "score": null
+      "status": "已评分",
+      "score": 89.375
     },
     {
       "task": "bw_0031",
@@ -97,8 +97,8 @@
     {
       "task": "bw_0031",
       "role": "astra",
-      "status": "等待评测",
-      "score": null
+      "status": "已评分",
+      "score": 87.85714285714286
     },
     {
       "task": "bw_0037",
@@ -115,8 +115,8 @@
     {
       "task": "bw_0045",
       "role": "opus",
-      "status": "评测中",
-      "score": null
+      "status": "已评分",
+      "score": 83.125
     },
     {
       "task": "bw_0045",
@@ -199,8 +199,8 @@
     {
       "task": "bw_0102",
       "role": "opus",
-      "status": "排队中",
-      "score": null
+      "status": "已评分",
+      "score": 86.875
     },
     {
       "task": "bw_0102",
@@ -217,8 +217,8 @@
     {
       "task": "bw_0103",
       "role": "astra",
-      "status": "等待评测",
-      "score": null
+      "status": "已评分",
+      "score": 90.0
     },
     {
       "task": "bw_0107",
@@ -295,14 +295,14 @@
     {
       "task": "bw_0160",
       "role": "opus",
-      "status": "等待评测",
-      "score": null
+      "status": "已评分",
+      "score": 84.375
     },
     {
       "task": "bw_0160",
       "role": "astra",
-      "status": "排队中",
-      "score": null
+      "status": "已评分",
+      "score": 91.25
     },
     {
       "task": "bw_0167",
@@ -401,5 +401,5 @@
       "score": 51.25
     }
   ],
-  "updated_at": 1794765146.75284
+  "updated_at": 1794773418.6288702
 }

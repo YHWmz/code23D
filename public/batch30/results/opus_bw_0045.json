@@ -1,9 +1,9 @@
 {
   "task_id": "bw_0045",
   "modality": "image",
-  "ok": false,
-  "score": 0.0,
-  "rubric_score": null,
-  "dimension_score": null,
-  "error": "Render agent failed; see evaluation/render_agent.jsonl"
+  "ok": true,
+  "score": 83.125,
+  "rubric_score": 100.0,
+  "dimension_score": 66.25,
+  "error": ""
 }

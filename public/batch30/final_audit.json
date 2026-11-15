@@ -1,9 +1,9 @@
 {
-  "ok": false,
+  "ok": true,
   "complete": true,
   "expected_runs": 60,
   "audited_runs": 60,
-  "successful_runs": 52,
+  "successful_runs": 60,
   "global_errors": [],
   "runs": [
     {
@@ -171,9 +171,7 @@
     {
       "role": "opus",
       "task_id": "bw_0016",
-      "errors": [
-        "Official scoring unsuccessful: Render agent failed; see evaluation/render_agent.jsonl"
-      ],
+      "errors": [],
       "generation_finished": true,
       "input_hash_mismatches": [],
       "archive": {
@@ -189,12 +187,40 @@
       "result": {
         "task_id": "bw_0016",
         "modality": "image",
-        "ok": false,
-        "score": 0.0,
-        "rubric_score": null,
-        "dimension_score": null,
-        "error": "Render agent failed; see evaluation/render_agent.jsonl"
-      }
+        "ok": true,
+        "score": 87.5,
+        "rubric_score": 100.0,
+        "dimension_score": 75.0,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Eight newly rendered 1024x1024 Cycles evidence views at 64 samples. CPU was used because Blender reported no enabled supported GPU. Views cover the submitted framing, elevated and opposite wide workshop overviews, folding-bench top/support/vise/clamp details, the rear saw-drill-CNC equipment array, and the lumber-rack/clamp storage area with the stove context. The initial submitted-camera render was black; view_01 was corrected once by rendering an evaluator camera cloned from its submitted transform. All final PNGs were opened and inspected. Authored denoising, lighting, materials, visibility, and color management were retained."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 75.0,
+        "score": 87.5
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
     },
     {
       "role": "opus",
@@ -307,9 +333,7 @@
     {
       "role": "opus",
       "task_id": "bw_0045",
-      "errors": [
-        "Official scoring unsuccessful: Render agent failed; see evaluation/render_agent.jsonl"
-      ],
+      "errors": [],
       "generation_finished": true,
       "input_hash_mismatches": [],
       "archive": {
@@ -325,12 +349,40 @@
       "result": {
         "task_id": "bw_0045",
         "modality": "image",
-        "ok": false,
-        "score": 0.0,
-        "rubric_score": null,
-        "dimension_score": null,
-        "error": "Render agent failed; see evaluation/render_agent.jsonl"
-      }
+        "ok": true,
+        "score": 83.125,
+        "rubric_score": 100.0,
+        "dimension_score": 66.25,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered eight newly generated 1024x1024 CYCLES views at 64 samples from the submitted final.blend. CPU was the actual device because no supported OPTIX or CUDA device was available. View 01 retains the submitted author camera. Views 02-05 document the long employee circulation aisle, both down-row directions, a far-side circulation view with workers for scale, and an elevated layout view. Views 06-07 provide close evidence of recumbent Holsteins, sparse straw on the raised concrete beds, galvanized divider loops, rails, and curb. View 08 documents the blue ribbed metal door and enclosing rear architectural zone. All views were visually inspected after rendering. View 05 was corrected once after its initial camera position was blocked by geometry; the final file has the corrected elevated framing."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 66.25,
+        "score": 83.125
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
     },
     {
       "role": "opus",
@@ -659,12 +711,56 @@
     {
       "role": "opus",
       "task_id": "bw_0102",
-      "errors": [
-        "Generation not successfully terminated",
-        "Expected a per-task submission ZIP"
-      ],
-      "generation_finished": false,
-      "input_hash_mismatches": []
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 2,
+        "bytes": 29772240,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0102",
+        "modality": "text",
+        "ok": true,
+        "score": 86.875,
+        "rubric_score": 100.0,
+        "dimension_score": 73.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Eight newly rendered 1024x1024 Cycles evidence views at 64 samples. View 01 preserves the submitted author camera; views 02-04 provide complementary wide cutaway and top-down coverage; views 05-08 provide close coverage of the nucleus/nuclear pores, rough ER with attached ribosomes, Golgi stack, and mitochondria with exposed phospholipid bilayer. All views were inspected after rendering. CPU was used because no supported OptiX or CUDA device was available. No corrective re-renders were needed."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 73.75,
+        "score": 86.875
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
     },
     {
       "role": "opus",
@@ -1047,9 +1143,7 @@
     {
       "role": "opus",
       "task_id": "bw_0160",
-      "errors": [
-        "Official scoring unsuccessful: Render agent failed; see evaluation/render_agent.jsonl"
-      ],
+      "errors": [],
       "generation_finished": true,
       "input_hash_mismatches": [],
       "archive": {
@@ -1065,12 +1159,40 @@
       "result": {
         "task_id": "bw_0160",
         "modality": "text",
-        "ok": false,
-        "score": 0.0,
-        "rubric_score": null,
-        "dimension_score": null,
-        "error": "Render agent failed; see evaluation/render_agent.jsonl"
-      }
+        "ok": true,
+        "score": 84.375,
+        "rubric_score": 81.25,
+        "dimension_score": 87.5,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All views were newly rendered from .eval_workspace/final.blend in Cycles at 1024x1024 and 64 samples with the submission's denoising retained. CPU was used because Blender detected no OPTIX or CUDA device. View 01 preserves the submitted 85 mm three-quarter camera; views 02-05 provide centered, opposing three-quarter, elevated, and side product coverage; views 06-08 inspect cushions/leather/tufting, rolled-arm double nailhead trim, and turned wood leg with brass caster. The initial rear attempt for view 04 was occluded by the submitted studio cyclorama and was corrected to an elevated front view; detail views 06-08 were refocused after inspection for readable construction evidence."
+      },
+      "independent_score": {
+        "rubric_score": 81.25,
+        "dimension_score": 87.5,
+        "score": 84.375
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
     },
     {
       "role": "opus",
@@ -1669,9 +1791,7 @@
     {
       "role": "astra",
       "task_id": "bw_0016",
-      "errors": [
-        "Official scoring unsuccessful: Render agent failed; see evaluation/render_agent.jsonl"
-      ],
+      "errors": [],
       "generation_finished": true,
       "input_hash_mismatches": [],
       "archive": {
@@ -1687,19 +1807,45 @@
       "result": {
         "task_id": "bw_0016",
         "modality": "image",
-        "ok": false,
-        "score": 0.0,
-        "rubric_score": null,
-        "dimension_score": null,
-        "error": "Render agent failed; see evaluation/render_agent.jsonl"
-      }
+        "ok": true,
+        "score": 89.375,
+        "rubric_score": 100.0,
+        "dimension_score": 78.75,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered from the submitted final.blend at 1024x1024 with Cycles and 64 samples per view; CPU was used because neither OPTIX nor CUDA was available. Views 01 and 02 use the submitted hero and wider-layout cameras. Complementary views document the folding bench top/vise/perforated supports, the rear machine bench and its saw/drill/CNC/lamp array, the CNC/stove area, lumber rack, clamps, and background storage. View 08 was corrected once after its initial exterior-wall framing rendered nearly black; the final framing is positioned inside the enclosure and clearly shows the cast-iron stove, flue, CNC edge, clamps, and utility bench. All output PNGs were individually inspected."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 78.75,
+        "score": 89.375
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
     },
     {
       "role": "astra",
       "task_id": "bw_0031",
-      "errors": [
-        "Official scoring unsuccessful: Render agent failed; see evaluation/render_agent.jsonl"
-      ],
+      "errors": [],
       "generation_finished": true,
       "input_hash_mismatches": [],
       "archive": {
@@ -1715,12 +1861,40 @@
       "result": {
         "task_id": "bw_0031",
         "modality": "image",
-        "ok": false,
-        "score": 0.0,
-        "rubric_score": null,
-        "dimension_score": null,
-        "error": "Render agent failed; see evaluation/render_agent.jsonl"
-      }
+        "ok": true,
+        "score": 87.85714285714286,
+        "rubric_score": 85.71428571428571,
+        "dimension_score": 90.0,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Rendered from the submitted final.blend using Cycles at 1024x1024 and 64 samples per view; denoising and submitted scene color management were retained. CPU was used because neither OPTIX nor CUDA exposed a supported device. Views cover the submitted overview, a corrected dedicated GRID-board detail, broad interior layouts, the main console/meter wall, the ventilation grille, and the independent right console. view_02 was corrected once after inspection because the submitted second camera evaluated to the same framing as the overview."
+      },
+      "independent_score": {
+        "rubric_score": 85.71428571428571,
+        "dimension_score": 90.0,
+        "score": 87.85714285714286
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
     },
     {
       "role": "astra",
@@ -2211,9 +2385,7 @@
     {
       "role": "astra",
       "task_id": "bw_0103",
-      "errors": [
-        "Official scoring unsuccessful: Render agent failed; see evaluation/render_agent.jsonl"
-      ],
+      "errors": [],
       "generation_finished": true,
       "input_hash_mismatches": [],
       "archive": {
@@ -2229,12 +2401,40 @@
       "result": {
         "task_id": "bw_0103",
         "modality": "text",
-        "ok": false,
-        "score": 0.0,
-        "rubric_score": null,
-        "dimension_score": null,
-        "error": "Render agent failed; see evaluation/render_agent.jsonl"
-      }
+        "ok": true,
+        "score": 90.0,
+        "rubric_score": 100.0,
+        "dimension_score": 80.0,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "Eight newly rendered 1024x1024 Cycles evidence views at 64 samples with the scene denoising retained. CPU was the only available Cycles device. Views 01-04 and 08 are complementary full-product turntable angles (01 uses the submitted 50 mm camera); views 05-07 are fitted details of the blank front label/frosted shoulder, closure transition, and downturned brushed-silver pump/nozzle. All PNGs were visually inspected after their initial renders; no corrective rerenders were needed."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 80.0,
+        "score": 90.0
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
     },
     {
       "role": "astra",
@@ -2565,12 +2765,56 @@
     {
       "role": "astra",
       "task_id": "bw_0160",
-      "errors": [
-        "Generation not successfully terminated",
-        "Expected a per-task submission ZIP"
-      ],
-      "generation_finished": false,
-      "input_hash_mismatches": []
+      "errors": [],
+      "generation_finished": true,
+      "input_hash_mismatches": [],
+      "archive": {
+        "format": "blenderworld-submission-v1",
+        "project": "final.blend",
+        "manifest_present": true,
+        "files": 5,
+        "bytes": 214587921,
+        "blend_files": [
+          "final.blend"
+        ]
+      },
+      "result": {
+        "task_id": "bw_0160",
+        "modality": "text",
+        "ok": true,
+        "score": 91.25,
+        "rubric_score": 100.0,
+        "dimension_score": 82.5,
+        "error": ""
+      },
+      "views": {
+        "ok": true,
+        "view_count": 8,
+        "engine": "CYCLES",
+        "device": "CPU",
+        "image_files": [
+          "view_01.png",
+          "view_02.png",
+          "view_03.png",
+          "view_04.png",
+          "view_05.png",
+          "view_06.png",
+          "view_07.png",
+          "view_08.png"
+        ],
+        "notes": "All views were newly rendered from .eval_workspace/final.blend in Cycles at 1024x1024 with 64 samples; no compatible OPTIX or CUDA GPU was detected, so CPU was used while retaining the submitted denoising, lighting, materials, visibility, and color management. view_01 uses the submitted 85 mm three-quarter hero camera. Views 02-05 provide centered-front, opposite three-quarter, side, and rear three-quarter coverage. Views 06-08 provide close evidence of deep diamond tufting and cushion sewing/piping, the turned wood leg with brass caster and double-row nailheads, and the rolled-arm tufting/nailhead trim. Each PNG was opened and visually inspected; no framing or clipping corrections were required."
+      },
+      "independent_score": {
+        "rubric_score": 100.0,
+        "dimension_score": 82.5,
+        "score": 91.25
+      },
+      "versions": {
+        "blender": "4.2.10",
+        "node": "22.17.0",
+        "claude_code": "2.1.220"
+      },
+      "structure_evidence": true
     },
     {
       "role": "astra",

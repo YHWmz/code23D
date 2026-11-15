@@ -1,0 +1,48 @@
+{
+  "status": "completed",
+  "runs": [
+    {
+      "role": "astra",
+      "task": "bw_0016",
+      "status": "scored"
+    },
+    {
+      "role": "opus",
+      "task": "bw_0045",
+      "status": "scored"
+    },
+    {
+      "role": "opus",
+      "task": "bw_0102",
+      "status": "scored"
+    },
+    {
+      "role": "astra",
+      "task": "bw_0103",
+      "status": "scored"
+    },
+    {
+      "role": "opus",
+      "task": "bw_0160",
+      "status": "scored"
+    },
+    {
+      "role": "opus",
+      "task": "bw_0016",
+      "status": "scored"
+    },
+    {
+      "role": "astra",
+      "task": "bw_0031",
+      "status": "scored"
+    },
+    {
+      "role": "astra",
+      "task": "bw_0160",
+      "status": "scored"
+    }
+  ],
+  "original_success_scores_unchanged": true,
+  "successful_runs": 60,
+  "first_attempts_preserved": true
+}
