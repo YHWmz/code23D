@@ -50,3 +50,18 @@ python -m http.server 8080 --directory public
 任务与参考输入来自 [Qwen/BlenderWorld](https://huggingface.co/datasets/Qwen/BlenderWorld)，官方代码为 [QwenLM/BlenderWorld](https://github.com/QwenLM/BlenderWorld)。保留上游 MIT 许可于 `BLENDERWORLD_LICENSE`。本仓库中的模型对比结果为独立实验记录，并非官方全量榜单。
 
 超过 Pages 限制的提交视频转换为最大 1280×720 的网页预览；原视频保留在服务器。补跑保持已成功评分不变，失败的初次运行留档。
+
+## 模型制作轨迹
+
+`/trajectories/` 覆盖全部 35 题、两个模型的 70 条生成轨迹。首页每个模型的「制作轨迹」链接，以及各题输入页均可直接进入对应任务与模型。支持环节和工具筛选、命令与返回内容搜索、错误筛选，以及模型切换。
+
+页面展示可观察的工具调用、中文规则说明、代码技术片段、制作顺序及产物预览；不将工具调用视为成功证明，也不展示模型内部思考。长代码和输出节选会明确标记，保留日志行号和哈希供服务器核对。现有日志包含补跑后的记录，页面标记相应运行。
+
+在实验服务器上更新：
+
+```bash
+python scripts/build_trajectories.py public
+python scripts/validate_site.py public
+```
+
+完整快照导出 `scripts/export_public_site.py` 也会自动执行该步骤。生成器需要服务器原有两个实验目录及日志，静态站点访问无需服务器或模型接口。公开数据只包含工具输入/返回的受限节选和统计，不包含原始日志、思考内容或凭据。

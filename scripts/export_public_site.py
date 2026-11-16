@@ -49,3 +49,6 @@ print(json.dumps({'files':sum(f.is_file() for f in out.rglob('*')),'bytes':sum(f
 
 from build_home import build
 build(out)
+
+from build_trajectories import build as build_trajectories
+build_trajectories(out)
